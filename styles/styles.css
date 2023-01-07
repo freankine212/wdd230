@@ -1,0 +1,54 @@
+body {
+    text-align: left;
+  }
+
+
+nav {
+    background-color: white;
+    padding: 20px;
+    justify-content: space-around;
+  }
+
+h1 {
+  color: black;
+  margin: 50px 0;
+  grid-column:2/2;
+  grid-row: 1/2;
+
+}
+img {
+  width: 250px;
+  border: 4px solid steelblue;
+}
+p {
+  padding: 10px;
+}
+
+header{
+    background-color: steelblue;
+    justify-content: space-around;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+footer {
+  background-color: red;
+  color: white;
+}
+.main-para {
+  font-size: 1.5em;
+  line-height: 1.5em;
+}
+
+#active {
+  background-color: white;
+  color: steelblue;
+}
+footer {
+  background-color: steelblue;
+  color: orange;
+}
+
+footer p {
+  padding: 25px;
+}
