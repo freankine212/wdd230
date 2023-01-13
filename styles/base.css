@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Arimo&family=Grechen+Fuemen&family=Permanent+Marker&family=Roboto:wght@100&family=Vujahday+Script&display=swap');
+
 body {
     text-align: left;
   }
@@ -51,4 +53,19 @@ footer {
 
 footer p {
   padding: 25px;
+}
+
+a {
+    font-family: 'Permanent Marker', cursive;
+    font-size:medium;
+}
+
+p{
+    font-family: 'Permanent Marker', cursive;
+    font-size: small;
+}
+
+h1{
+    font-family: 'Permanent Marker', cursive;
+    font-size:smaller;
 }

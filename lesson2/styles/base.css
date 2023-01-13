@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Ubuntu&display=swap');
+main {
+    max-width: 767px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    font-size: 0.8rem;
+    grid-gap: .5em;
+    text-align: center;
+}
+
+header {
+    background-color: grey;
+    text-align: center;
+    border-style: inset;
+    border-color: black;
+
+}
+
+h1 {
+    text-align: center;
+    margin: 0;
+    font-weight: 400;
+    font-family: 'Inconsolata', monospace;
+}
+
+h2, h3{
+    text-align: left;
+    margin: 0;
+    font-weight: 400;
+    font-family: 'Inconsolata', monospace;
+    color: black;
+    background-color: gray;
+}
+
+p {
+    font-family: 'Ubuntu', sans-serif;
+    color: black;
+}
+
+section {
+    border-style: double;
+    border-color: black;
+    max-width: fit-content;
+    color: brown;
+    background-color: grey;
+}
+
+footer{
+    text-align: center;
+    color: orange;
+    border-style: groove;
+    border-color: black;
+    background-color: grey;
+}
