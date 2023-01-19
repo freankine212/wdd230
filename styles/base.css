@@ -2,37 +2,46 @@
 
 body {
     text-align: left;
+    max-width: 100%;
   }
 
 
-nav {
+main {
     background-color: white;
     padding: 20px;
     justify-content: space-around;
   }
 
+  header{
+    background-color: steelblue;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    text-align: left;
+    border-style: dotted;
+}
+
 h1 {
   color: black;
   margin: 50px 0;
+  text-align: center;
   grid-column:2/2;
   grid-row: 1/2;
 
 }
+
 img {
-  width: 250px;
-  border: 4px solid steelblue;
+  margin: 0 auto;
+  width: 40%;
+  grid-column: 1/2;
+  grid-row: 1/2;
 }
+
 p {
   padding: 10px;
 }
 
-header{
-    background-color: steelblue;
-    justify-content: space-around;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-}
+
 footer {
   background-color: red;
   color: white;
@@ -47,8 +56,8 @@ footer {
   color: steelblue;
 }
 footer {
-  background-color: steelblue;
-  color: orange;
+  background-color: #BBD0E2;
+  color: black;
 }
 
 footer p {

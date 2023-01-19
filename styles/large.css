@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Arimo&family=Grechen+Fuemen&family=Permanent+Marker&family=Roboto:wght@100&family=Vujahday+Script&display=swap');
+@media only screen and (min-width: 60em) {
+	main {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+	
+	/* This is unncessary !!! The flow is set and the template is set already */
+	main section:nth-child(1) {
+	  grid-column: 1/2;
+  }
+	main section:nth-child(2) {
+	  grid-column: 2/3;
+		grid-row: 1/2;
+  }
+	/*************************************/
+
+	main section:nth-child(3) {
+		grid-column: span 1;
+	}
+}
