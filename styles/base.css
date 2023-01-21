@@ -1,41 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Arimo&family=Grechen+Fuemen&family=Permanent+Marker&family=Roboto:wght@100&family=Vujahday+Script&display=swap');
 
 body {
-    text-align: left;
-    max-width: 100%;
-  }
+  text-align: left;
+  max-width: 100%;
+}
 
-
-main {
-    background-color: white;
-    padding: 20px;
-    justify-content: space-around;
-  }
-
-  header{
-    background-color: steelblue;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    text-align: left;
-    border-style: dotted;
+header{
+  background-color: steelblue;
+  border-style: dotted;
+  margin: 0 auto;
+  display:flex
 }
 
 h1 {
   color: black;
-  margin: 50px 0;
-  text-align: center;
-  grid-column:2/2;
-  grid-row: 1/2;
-
+  display: inline-block;
+  width:auto;
+  justify-content: left;
 }
 
 img {
-  margin: 0 auto;
-  width: 40%;
-  grid-column: 1/2;
-  grid-row: 1/2;
+  width: auto;
 }
+
+
+main {
+  background-color: white;
+  padding: 20px;
+  justify-content: space-around;
+}
+
 
 p {
   padding: 10px;
@@ -46,6 +40,7 @@ footer {
   background-color: red;
   color: white;
 }
+
 .main-para {
   font-size: 1.5em;
   line-height: 1.5em;
@@ -55,6 +50,7 @@ footer {
   background-color: white;
   color: steelblue;
 }
+
 footer {
   background-color: #BBD0E2;
   color: black;
@@ -65,16 +61,16 @@ footer p {
 }
 
 a {
-    font-family: 'Permanent Marker', cursive;
-    font-size:medium;
+  font-family: 'Permanent Marker', cursive;
+  font-size:medium;
 }
 
 p{
-    font-family: 'Permanent Marker', cursive;
-    font-size: small;
+  font-family: 'Permanent Marker', cursive;
+  font-size: small;
 }
 
 h1{
-    font-family: 'Permanent Marker', cursive;
-    font-size:smaller;
+  font-family: 'Permanent Marker', cursive;
+  font-size:smaller;
 }
