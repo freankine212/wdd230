@@ -1,0 +1,30 @@
+@media only screen and (min-width: 450px) {
+    html {
+        padding: 10px;
+    }
+    nav {
+        flex-direction: row;
+    }
+    header {
+        align-items: flex-start;
+        justify-items: flex-end;
+    }
+    header div {
+        display: flex;
+        align-items: flex-end;
+        justify-self: flex-start;
+        width: 100%;
+    }
+    header h1 {
+        font-size: 1em;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    footer {
+        font-size: 100%;
+    }
+    #logo {
+        width: 100px;
+        align-self: center;
+    }
+}

@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Macondo&family=UnifrakturMaguntia&display=swap');
+/* font-family: 'Macondo', cursive;             Paragraph
+font-family: 'UnifrakturMaguntia', cursive;     Heading */
+
+
+:root{
+    --primary-bg: rgb(156,102,21);
+    --primary-fg: rgb(65, 54, 32);
+    --secondary-fg: rgb(159, 120, 51);
+    --secondary-bg: rgb(255, 215, 145);
+    --pop-color: rgb(205, 209, 222);
+    --body-font:'Macondo', cursive;
+    --heading-font:'UnifrakturMaguntia', cursive; 
+}
+html {
+    padding: 0px;
+    font-family: var(--body-font); 
+}
+
+body{
+    text-align: left;
+    max-width: 100%;
+    margin: 0px auto;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: var(--heading-font)
+}
+
+p {
+    font-family: var(--body-font)
+}
+
+#logo{
+    display:inline;
+    width:20%
+}
+/* Header stuff */
+
+header{
+    background-color: var(--primary-bg);
+    color: var(--primary-fg);
+    flex-direction:column;
+    padding: 30px;
+    padding-bottom:0px;
+    border-style:ridge;
+    border-color:var(--pop-color);
+}
+
+header h1{
+    font-size: 2em;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+header div{
+    align-self:center;
+    text-align: center;
+}
+
+nav{
+    font-family:var(--body-font);
+    display:flex;
+    flex-direction: column;
+    margin-top: 20px;
+    align-items: center;
+    align-self:center;
+    width: 50%;
+    border-style:ridge;
+    border-color:var(--secondary-bg);
+}
+
+nav a{
+    padding:7px 5px;
+    width:25%;
+}
+
+nav a:link{
+    color: var(--primary-fg)
+}
+
+nav a:visited{
+    color:var(--primary-fg)
+}
+a:link{
+    color:var(--pop-color)
+}
+a:visited{
+    color:var(--primary-fg)
+}
+
+/* Main stuff */
+main{
+    padding: 40px;
+    background-color: var(--secondary-bg);
+    color: var(--secondary-fg);
+    border-style:ridge;
+    border-color:var(--secondary-bg);
+}
+
+main h2,h3,h4 {
+    color: var(--primary-fg);
+    filter: brightness(150%);
+}
+
+/* Footer stuff */
+
+footer{
+    background-color: var(--primary-bg);
+    color: var(--primary-fg);
+    display: flex;
+    padding: 15px 40px;
+    font-size: 70%;
+    justify-content: left;
+    border-style:ridge;
+    border-color:var(--secondary-bg);
+}
+
