@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Arimo&family=Grechen+Fuemen&family=Permanent+Marker&family=Roboto:wght@100&family=Vujahday+Script&display=swap');
 
 body {
-  text-align: left;
+  text-align: center;
   max-width: 100%;
 }
 
@@ -35,10 +35,6 @@ p {
 }
 
 
-footer {
-  background-color: red;
-  color: white;
-}
 
 .main-para {
   font-size: 1.5em;
@@ -53,6 +49,10 @@ footer {
 footer {
   background-color: #BBD0E2;
   color: black;
+  display: flex;
+  padding: 15px 40px;
+  font-size: 70%;
+  justify-content: center;
 }
 
 footer p {
