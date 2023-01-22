@@ -8,19 +8,18 @@ body {
 header{
   background-color: steelblue;
   border-style: dotted;
-  margin: 0 auto;
-  display:flex
+  display:flex;
+  justify-content: center;
 }
 
 h1 {
   color: black;
   display: inline-block;
   width:auto;
-  justify-content: left;
 }
 
 img {
-  width: auto;
+  width: 100px;
 }
 
 
