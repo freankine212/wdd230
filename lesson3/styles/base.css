@@ -18,8 +18,8 @@ html {
 }
 
 body{
-    text-align: left;
-    max-width: 100%;
+    text-align: center;
+    max-width: 65%;
     margin: 0px auto;
 }
 
@@ -33,7 +33,7 @@ p {
 
 #logo{
     display:inline;
-    width:20%
+    width:50%
 }
 /* Header stuff */
 
@@ -62,11 +62,13 @@ nav{
     font-family:var(--body-font);
     display:flex;
     flex-direction: column;
-    margin-top: 20px;
+    margin: 0 auto;
+    text-align: center;
     align-items: center;
     align-self:center;
     width: 50%;
     border-style:ridge;
+    padding-left: 3rem;
     border-color:var(--secondary-bg);
 }
 
@@ -111,7 +113,7 @@ footer{
     display: flex;
     padding: 15px 40px;
     font-size: 70%;
-    justify-content: left;
+    justify-content: center;
     border-style:ridge;
     border-color:var(--secondary-bg);
 }
