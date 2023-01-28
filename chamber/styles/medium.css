@@ -21,4 +21,16 @@
 		border: 1px solid #bbb;
 	}
 
+	nav button{
+		display: none;
+	}
+	nav ul#primaryNav{
+		display: flex;
+		margin: left 2vw;
+	}
+	
+	nav ul li a{
+		border: none;
+	}
+
 }

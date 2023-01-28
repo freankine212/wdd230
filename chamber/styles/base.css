@@ -91,6 +91,46 @@ a:visited{
     color:var(--primary-fg)
 }
 
+nav button{
+    margin: .2rem 2vw;
+    justify-content: center;
+}
+
+nav ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+nav ul{
+    display: none;
+}
+nav ul.open{
+    display:block;
+}
+
+nav ul li a{
+    display: block;
+    padding: .8rem 2vw;
+    text-decoration: none;
+    color: #333;
+    border-top:1px solid var(--primary-fg);
+}
+
+nav ul li a:hover{
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+nav ul li.active a{
+    background-color: rgba(0,0,0,0.2);
+    color: #fff;
+}
+
+#hamburgerBtn span:nth-child(1){display: block;}
+#hamburgerBtn span:nth-child(2){display: none;}
+
+#hamburgerBtn.open span:nth-child(1){display: none;}
+#hamburgerBtn.open span:nth-child(2){display: block;}
+
 /* Main stuff */
 main{
     padding: 40px;
