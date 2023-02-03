@@ -32,15 +32,15 @@ p {
 }
 
 #logo{
-    display:inline;
-    width:50%
+    display:left;
+    width:auto;
 }
 /* Header stuff */
 
 header{
     background-color: var(--primary-bg);
     color: var(--primary-fg);
-    flex-direction:column;
+    flex-direction:row;
     padding: 30px;
     padding-bottom:0px;
     border-style:ridge;
@@ -52,6 +52,8 @@ header h1{
     margin-top: 0px;
     margin-bottom: 0px;
 }
+
+
 
 header div{
     align-self:center;
