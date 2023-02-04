@@ -147,11 +147,29 @@ main h2,h3,h4 {
     filter: brightness(150%);
 }
 
-#hero{
-    margin-top: .8rem;
-    width: 100%;
-    align-self: center;
+.herodiv{
+    margin: 10px auto;
+    position: relative;
+    border: 1px;
+    width: 960px;
+    height: 300px;
 }
+
+.hero-img{
+    margin: 10px auto;
+    position: relative;
+    border: 1px;
+    width: 98%;
+    height: 250px;
+}
+
+.weathersummary{
+    position:absolute;
+    top: 50px;
+    left: 700px;
+
+}
+
 
 section {
     border-style: double;
