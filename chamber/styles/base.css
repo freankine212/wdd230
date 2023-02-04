@@ -147,6 +147,12 @@ main h2,h3,h4 {
     filter: brightness(150%);
 }
 
+#hero{
+    margin-top: .8rem;
+    width: auto;
+    align-self: center;
+}
+
 section {
     border-style: double;
     border-color: var(--pop-color);
