@@ -68,7 +68,7 @@ nav{
     text-align: center;
     align-items: center;
     align-self:center;
-    width: 50%;
+    width: 65%;
     border-style:ridge;
     padding-left: 3rem;
     border-color:var(--secondary-bg);
@@ -149,7 +149,7 @@ main h2,h3,h4 {
 
 #hero{
     margin-top: .8rem;
-    width: auto;
+    width: 100%;
     align-self: center;
 }
 
