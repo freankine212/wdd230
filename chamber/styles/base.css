@@ -140,6 +140,8 @@ main{
     color: var(--secondary-fg);
     border-style:ridge;
     border-color:var(--secondary-bg);
+    display: flex;
+    flex-flow: column wrap;
 }
 
 main h2,h3,h4 {
@@ -151,16 +153,17 @@ main h2,h3,h4 {
     margin: 10px auto;
     position: relative;
     border: 1px;
-    width: 960px;
-    height: 300px;
+    max-width: auto;
+    max-height: auto;
+    align-items: center;
 }
 
 .hero-img{
     margin: 10px auto;
     position: relative;
     border: 1px;
-    width: 98%;
-    height: 250px;
+    max-width: 100px;
+    max-height: 250px;
 }
 
 .weathersummary{
@@ -180,6 +183,9 @@ section {
     margin: 1rem;
 }
 
+.calltoaction,.events,.news,.spotlights,.join {
+
+}
 
 /* Footer stuff */
 
