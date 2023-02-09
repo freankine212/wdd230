@@ -36,6 +36,13 @@ p {
     width:auto;
 }
 /* Header stuff */
+#banner{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 20px;
+}
 
 header{
     background-color: var(--primary-bg);
@@ -127,6 +134,18 @@ nav ul li.active a{
     color: #fff;
 }
 
+#hamburgerBtn {
+    padding: 5px 5px;
+    z-index: 300;
+    width: min-content;
+    align-self: center;
+}
+
+#hamburgerBtn img{
+    height: 30px;
+    width: 30px;
+}
+
 #hamburgerBtn span:nth-child(1){display: block;}
 #hamburgerBtn span:nth-child(2){display: none;}
 
@@ -153,8 +172,8 @@ main h2,h3,h4 {
     margin: 10px auto;
     position: relative;
     border: 1px;
-    max-width: auto;
-    max-height: auto;
+    max-width: 200;
+    max-height: 100;
     align-items: center;
 }
 
@@ -181,11 +200,11 @@ section {
     color: var(--primary-fg);
     background-color: #F5FBDF;
     margin: 1rem;
+    display:block;
+    
 }
 
-.calltoaction,.events,.news,.spotlights,.join {
 
-}
 
 /* Footer stuff */
 

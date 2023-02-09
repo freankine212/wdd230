@@ -16,10 +16,13 @@
 </head>
 <body>
     <header>
-        <p><div id="day"></div></p>
-        <img id="logo" src="images/laketown_logo_resized.jpg" alt="The logo for the Laketown, Middle-Earth Chamber of Commerce">
-        <h1> Laketown Chamber of Commerce</h1>
-        <div id="current-date">date</div>
+        <p><div id="day"></div>
+        <div id="banner">
+            <img id="logo" src="images/logo.svg.svg" width=100 height=100 alt="The logo for the Laketown, Middle-Earth Chamber of Commerce">
+            <h1> Laketown Chamber of Commerce</h1>
+            <div id="current-date">date</div>
+        </div></p>
+
         <nav>
             <button id='hamburgerBtn'><span>&#9776;</span><span>X</span></button>
             <ul id='primaryNav'>
@@ -33,19 +36,21 @@
         </nav>
     </header>
     <main>
-        <div class="herodiv">
-            <img id="hero-img" src="images/hero.jpg" alt="hero image for laketown chamber of commerce">
-                <section class="weathersummary">
-                    <h3>Weather Summary</h3>
-                    <a href="https://unsplash.com/photos/KWTkd7mHqKE" target="_blank"></href><img id="clouds" src="images/clouds.jpg" alt="clouds over the lake" width="100" height="100"></a>
-                    <p>Label Value</p>
-                    <p>Label Value</p>
-                    <p>Label Value</p>
-                </section>
-        </div>
+        <section>
+            <div class="herodiv">
+                <img src="images/hero.jpg" alt="hero image for laketown chamber of commerce">
+                    <section class="weathersummary">
+                        <h3>Weather Summary</h3>
+                        <a href="https://unsplash.com/photos/KWTkd7mHqKE" target="_blank"><img id="clouds" src="images/clouds.jpg" alt="clouds over the lake" width="100" height="100"></a>
+                        <p>Label Value</p>
+                        <p>Label Value</p>
+                        <p>Label Value</p>
+                    </section>
+            </div>
+        </section>
         <section>
         <div class="calltoaction">Call to action</div>
-        <a href="https://unsplash.com/photos/vq1QaWgQtz4" target="blank"><img id="battle" src="images/battle_prep.jpg" alt="call to action" width="300" height="300"></a>
+        <a href="https://unsplash.com/photos/vq1QaWgQtz4" target="blank">call to action</a>
         </section>
         <section>
         <div class="news">News</div>
@@ -59,8 +64,12 @@
             <section>
                 <div class="spotlight1">Find 'em All</div>
                 Need a tracker? WE GOT 'EM! Come find us at 15 Laketown Way and we will get you going to find whatever you are looking for! Need to find your dog? A goblin who took your jewelery? Your estranged mother-in-law? No matter the issue we will find em!
+            </section>
+            <section>
                 <div class="spotlight2">Miners Wanted</div>
-                The Miners guild has struck it rich and we need more people to come help! Put in your application at town hall or speak with Bard and he will get you started  
+                The Miners guild has struck it rich and we need more people to come help! Put in your application at town hall or speak with Bard and he will get you started
+            </section>  
+            <section>
                 <div class="spotlight3">Agricouture</div>
                 Need some fashionable clothes to farm in? We are looking for someone willing to mend and sew new clothes for our farmers in need.
             </section>
@@ -70,7 +79,7 @@
         </section>
     </main>
     <footer>
-        <img src="images/laketown_logo_resized.jpg" width="50" height="50" alt="Laketown chamber of commerce logo"><a href="https://goo.gl/maps/JtLYFcWp3DSvZvSp9" target="_blank"><p>Location:2 Laketown Way, Laketown, Rhovanion, Middle Earth </p></a><p>&copy;<span id="theCurrentYear"></span> Mike Helm Pocatello, ID &LT;(^.^)> Last Modified <span id="date"></span></p>
+        <img src="images/logo.svg.svg" width="50" height="50" alt="Laketown chamber of commerce logo"><a href="https://goo.gl/maps/JtLYFcWp3DSvZvSp9" target="_blank"><p>Location:2 Laketown Way, Laketown, Rhovanion, Middle Earth </p></a><p>&copy;<span id="theCurrentYear"></span> Mike Helm Pocatello, ID &LT;(^.^)> Last Modified <span id="date"></span></p>
     </footer>
 <script src="scripts/apps.js"></script>
 <script src="scripts/hamburger.js"></script>
