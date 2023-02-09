@@ -188,14 +188,6 @@ main h2,h3,h4 {
     max-height: 250px;
 }
 
-.weathersummary{
-    position:absolute;
-    top: 50px;
-    left: 50px;
-
-}
-
-
 section {
     border-style: double;
     border-color: var(--pop-color);
