@@ -25,10 +25,12 @@
 	}*/
 	#herodiv{
 		width:100%;
+		height:auto;
 
 	}
 	#hero-img{
 		width:100%;
+		height:inherit;
 	}
 	#spotlights-div{
 		display:flex;
@@ -75,7 +77,7 @@
 		width: 100%;
 		grid-row: 2/3;
 		grid-column:1/2;
-		padding:1px;
+		
 		
 	}
 	/*news*******/
