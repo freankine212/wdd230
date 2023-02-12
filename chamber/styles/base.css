@@ -199,8 +199,8 @@ section {
     
 }
 
-#weather-section{
-    width: 100%;
+.weatherdiv>img{
+    width:100%;    
 }
 
 #spotlights-section{

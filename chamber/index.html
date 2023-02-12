@@ -38,23 +38,28 @@
     <main>
         <section>
             <div class="herodiv">
-                <img src="images/hero.jpg" alt="hero image for laketown chamber of commerce">
+                <img srcset="images/wdd230-org-small.jpg 320vw, 
+                images/wdd230-org-med.jpg 640vw, 
+                images/wdd230-org-large.jpg 1024vw"
+                src="images/wdd230-org-small.jpg" 
+                alt="hero image for laketown chamber of commerce">
             </div>
         </section>
         <section>
             <div class="events">Events</div>
-            <a href="https://unsplash.com/photos/bXbi1jJVDf0" target="_blank"><img id="events" src="images/events.jpg" alt="dinners in the inn" width="100" height="100"></a>
+                <a href="https://unsplash.com/photos/bXbi1jJVDf0" target="_blank"><img id="events" src="images/events.jpg" alt="dinners in the inn" width="100" height="100"></a>
         </section>
-        <section>
-            <h3>Weather Summary</h3>
-            <div id="howCold">Wind Chill: </div>
-            <div id="cold">Temperature: </div>
-            <a href="https://unsplash.com/photos/KWTkd7mHqKE" target="_blank"><img id="clouds" src="images/clouds.jpg" alt="clouds over the lake"></a>
-
+        <section id="weather-section">
+            <div class="weathersection">
+                <h3>Weather Summary</h3>
+                    <a href="https://unsplash.com/photos/KWTkd7mHqKE" target="_blank"><img id="clouds" src="images/clouds.jpg" alt="clouds over the lake"></a>
+                    <p>Wind Chill: <div id="howCold">Wind Chill: </div></p>
+                    <p>Temperature: <div id="cold">Temperature: </div></p>
+            </div>
         </section>
         <section>
             <div class="news">News</div>
-            <a href="https://www.istockphoto.com/vector/town-crier-gm165517964-24325561" target="_blank"><img id="newshere" src="images/town_crier.jpg" alt="news ahead" width="100" height="50"></a>
+                <a href="https://www.istockphoto.com/vector/town-crier-gm165517964-24325561" target="_blank"><img id="newshere" src="images/town_crier.jpg" alt="news ahead" width="100" height="50"></a>
         </section>
         <section id="spotlights-section">
             <div class="spotlights">

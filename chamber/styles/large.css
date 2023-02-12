@@ -29,7 +29,7 @@
 
 	}
 	#hero-img{
-		width:100%;
+		width:1024vw;
 		height:inherit;
 	}
 	#spotlights-div{
@@ -60,6 +60,7 @@
 	/*Hero******/
 	section:nth-child(1){
 		width: 100%;
+		height:max-content;
 		grid-column: 2/4;
 		grid-row:1/2;
 		margin-top:0;
@@ -68,13 +69,15 @@
 	/*events*****/
 	section:nth-child(2) {
 		width: 100%;
+		height:max-content;
 		grid-column: 1/2;
 		grid-row: 1/2;
 		padding:0;
 	}
 	/*weather********/
 	section:nth-child(3) {
-		width: 100%;
+		width: 95%;
+		height: max-content;
 		grid-row: 2/3;
 		grid-column:1/2;
 		
