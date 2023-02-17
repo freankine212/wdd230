@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mike H's Chamber Index for BYU-I WDD230 Class">
+    <meta name="keywords" content="HTML, CSS, Javascript">
+    <meta name="Author" content="Mike Helm">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="icon" href="favicon.ico">
+    <title>Laketown Chamber of Commerce</title>
+</head>
+<body> 
+    <header>
+        <p><div id="day"></div>
+        <div id="banner">
+            <img id="logo" src="images/logo.svg.svg" width=100 height=100 alt="The logo for the Laketown, Middle-Earth Chamber of Commerce">
+            <h1> Laketown Chamber of Commerce</h1>
+            <div id="current-date">date</div>
+        </div></p>
+        <nav>
+            <button id='hamburgerBtn'><span>&#9776;</span><span>X</span></button>
+            <ul id='primaryNav'>
+                <li><a href="index.html">Home</a> </li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="#">Link2</a></li>
+                <li><a href="#">Link3</a></li>
+                <li><a href="https://www.linkedin.com"><img src="images/linkedin_logo.svg" width="20" height="20" alt="linkedin Link"></a></li>
+                <li><a href="https://www.facebook.com"><img src="images/facebook_logo.svg" width="20" height="20" alt="facebook Link"></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <H1>Come see Laketown and the glory of the Humans land that survived the War of the Five Armies</H1>
+        <section id="laktownone">
+            <picture>
+                <img src="images/discover/axe.jpg" data-src="images/discover/mountains.jpg" width="300" height="400">
+            </picture>
+            <p>Come explore the Misty Mountains! Lost treasure hidden inside and watch out for Goblins</p>
+        </section>
+        <section id="laketowntwo">
+            <picture>
+                <img src="images/discover/axe.jpg" data-src="images/discover/lake_with_smaug.jpg" width="300" height="400">
+            </picture>
+            <p>The great Dragon Smaug was felled in this very lake! Guided tours to see the great beast are now available</p>
+        </section>
+        <section id="laketownthree">
+            <picture>
+                <img src="images/discover/axe.jpg" data-src="images/discover/lake_and_mountain.jpg" width="300" height="400">
+            </picture>
+            <p>If you don't want to see the dragon, no problem, theres lots to do around the lake and surrounding hills. Come take a look!</p>
+        </section>
+        <section id="laketownfour">
+            <picture>
+                <img src="images/discover/axe.jpg" data-src="images/discover/quakies.jpg" width="300" height="400">
+            </picture>
+            <p>The hills are alive in Laketown. Come listen as the trees themselves quiver as the wind blows</p>
+        </section>
+        <section id="laketownfive">
+            <picture>
+                <img src="images/discover/axe.jpg" data-src="images/discover/wildlife.jpg" width="300" height="400">
+            </picture>
+            <p>You can see many types of wildlife in town and in surrounding areas. Careful, you never know when one might be watching you</p>
+        </section>
+        <section id="laketownsix">
+            <picture>
+                <img  src="images/discover/axe.jpg" data-src="images/discover/mining.jpg" width="300" height="400">
+            </picture>
+            <p>For the really antisocial ones, go be a miner and work in them hills</p>
+        </section>
+    </main>
+    <footer>
+        <img src="images/logo.svg.svg" width="50" height="50" alt="Laketown chamber of commerce logo"><a href="https://goo.gl/maps/JtLYFcWp3DSvZvSp9" target="_blank"><p>Location:2 Laketown Way, Laketown, Rhovanion, Middle Earth </p></a><p>&copy;<span id="theCurrentYear"></span> Mike Helm Pocatello, ID &LT;(^.^)> Last Modified <span id="date"></span></p>
+    </footer>
+<script src="scripts/apps.js"></script>
+<script src="scripts/hamburger.js"></script>
+<script src="scripts/lazyloading.js"></script>
+</body>
+</html>
