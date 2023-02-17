@@ -1,0 +1,19 @@
+header h1{
+    text-align: center;
+    background-color: aqua;
+    width:100%;
+}
+section{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    justify-content: center;
+}
+footer{
+    background-color: #BBD0E2;
+    color: black;
+    display: flex;
+    padding: 15px 40px;
+    font-size: 70%;
+    justify-content: center;
+}

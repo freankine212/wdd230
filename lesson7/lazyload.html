@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mike H's Lazy loading page practice for BYU-I WDD230 Class">
+    <meta name="keywords" content="HTML, CSS, Javascript">
+    <meta name="Author" content="Mike Helm">
+    <link rel="stylesheet" href="styles/base.css">
+    <title>Lazy Loader</title>
+</head>
+<body>
+    <header>
+        <h1>Images below, thanks</h1>
+    </header>
+    <main>
+        <section id="dogone">
+            <picture>
+                <img src= "images/boneone.jpg" data-src="images/dog-one.jpg" id="dogone" alt="dogone" width="300" height="400">
+            </picture>
+        </section>
+        <section id="dogtwo">
+            <picture>
+                <img src="images/boneone.jpg" data-src="images/dog-two.jpg" id="dogtwo" alt= "dogtwo"width="300" height="400">
+            </picture>
+        </section>
+        <section id="dogthree">
+            <picture>
+                <img src="images/boneone.jpg" data-src="images/dog-three.jpg" id="dogthree" alt="dogthree" width="300" height="400">
+            </picture>
+        </section>
+        <section id="dogfour">
+            <picture>
+                <img src="images/boneone.jpg" data-src="images/dog-four.jpg" id="dogfour" alt="dogfour" width="300" height="400">
+            </picture>
+        </section>
+        <section id="dogfive">
+            <picture>
+                <img src="images/boneone.jpg" data-src="images/dog-five.jpg" id="dogfive" alt="dogfive" width="300" height="400">
+            </picture>
+        </section>
+    </main>
+    <footer>
+        Mike Helm
+    </footer>
+<script src="apps.js" defer></script>
+</body>
+</html>

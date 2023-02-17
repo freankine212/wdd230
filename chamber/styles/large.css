@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Ubuntu&display=swap');
-@media only screen and (min-width: 63em) {
+@media only screen and (min-width: 80em) {
 	main {
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -29,10 +28,10 @@
 
 	}
 	#hero-img{
-		width:1024vw;
+		width:100%;
 		height:inherit;
 	}
-	#spotlights-div{
+	/*#spotlights-div{
 		display:flex;
 		flex-wrap: wrap;
 		width: 100%;
@@ -41,14 +40,15 @@
 		grid-row: 1/-1;
 		margin: 0 0 0 0;
 		padding: 0 0 0 0;
-	}
+	}*/
 	.spotlights{
+		display: flex;
+		flex-wrap: wrap;
 		height: 33%;
 		width:100%;
 	}
 
 	#spotlights-section{
-		display:flex;
 		height:100%;
 		width:100%;
 	}
@@ -58,7 +58,7 @@
 		max-width: 100%;
 	}
 	/*Hero******/
-	section:nth-child(1){
+	#herooo{
 		width: 100%;
 		height:max-content;
 		grid-column: 2/4;
@@ -67,7 +67,7 @@
 	}
 
 	/*events*****/
-	section:nth-child(2) {
+	#whatshappening{
 		width: 100%;
 		height:max-content;
 		grid-column: 1/2;
@@ -75,16 +75,16 @@
 		padding:0;
 	}
 	/*weather********/
-	section:nth-child(3) {
+	#weather-section{
 		width: 95%;
-		height: max-content;
+		/*height: max-content;*/
 		grid-row: 2/3;
 		grid-column:1/2;
 		
 		
 	}
 	/*news*******/
-	section:nth-child(4) {
+	#hotoffthepress{
 		width: 100%;
 		padding: 0;
 		grid-column: 2/4;
@@ -92,7 +92,7 @@
 	}
 
 	/*spotlights***/
-	section:nth-child(5){
+	#spotlights-section{
 		display:flex;
 		align-items:center;
 		justify-content: space-evenly;
@@ -101,11 +101,27 @@
 		grid-row: 1/-1;
 	}
 	/*join**/
-	section:nth-child(6){
+	#wantin{
 		display:block;
 		width:100%;
 		grid-row:3/4;
 		grid-column:1/2;
 	}
-
+	/* Brian */
+	main {
+		display: grid;
+		grid-template-columns: auto auto auto auto;
+		grid-template-rows: auto auto auto;
+		margin-top: 5%;
+		margin-bottom: 5%;
+		column-gap: .05%;
+		max-height: auto;
+	}
+	.weathersection {
+		grid-template-columns: 1/2;
+		grid-template-rows: 2/3;
+		width: 100%;
+		
+	}
 }
+
