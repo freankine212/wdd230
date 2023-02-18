@@ -58,17 +58,20 @@ header h1{
     font-size: 2em;
     margin-top: 0px;
     margin-bottom: 0px;
+    background-color: var(--primary-bg);
 }
 
 header div{
     align-self:center;
     text-align: center;
+    background-color: var(--primary-bg);
 }
 
 header #banner{
     align-self:center;
     text-align: center;
     width: auto;
+    background-color: var(--primary-bg);
 }
 
 nav{
