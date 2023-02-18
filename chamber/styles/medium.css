@@ -1,4 +1,4 @@
-@media only screen and (min-width: 37.5em) {
+@media only screen and (min-width: 450px) {
 	main {
 		display:grid;
 		grid-template-columns: 1fr 1fr;
@@ -14,13 +14,13 @@
 		/*grid-column: span 2; */ /*Brian 
 	}*/
 
-	main section picture {
+	main div picture {
 		display: block;
 	}
-	main section picture img {
+	main div picture img {
 		width: 100%;
 		height: auto;
-		border: 1px solid #bbb;
+		/*border: 1px solid #bbb;*/
 	}
 
 	nav button{
@@ -56,13 +56,12 @@
 	/* main > section:nth-child(2) */
 	#whatshappening {
 		width: 100%;
-		
 		grid-column: 2/3;
 		grid-row: 2/3;
 		padding: 0;
 	}
 	/*weather********/
-	main > #weather-section{
+	main > #weather-div{
 		width: 95%;
 		height: max-content;
 		grid-row: 2/3;
