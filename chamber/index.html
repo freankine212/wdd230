@@ -16,12 +16,12 @@
 </head>
 <body> 
     <header>
-        <p><div id="day"></div>
+        <div id="day"></div>
         <div id="banner">
             <img id="logo" src="images/logo.svg.svg" width=100 height=100 alt="The logo for the Laketown, Middle-Earth Chamber of Commerce">
             <h1> Laketown Chamber of Commerce</h1>
             <div id="current-date">date</div>
-        </div></p>
+        </div>
 
         <nav>
             <button id='hamburgerBtn'><span>&#9776;</span><span>X</span></button>
@@ -36,50 +36,50 @@
         </nav>
     </header>
     <main>
-        <section id="herooo">
+        <div id="herooo">
             <div class="herodiv">
-                <img srcset="images/wdd230-org-small.jpg 320vw, 
-                images/wdd230-org-med.jpg 640vw, 
-                images/wdd230-org-large.jpg 1024vw"
-                src="images/wdd230-org-small.jpg" 
-                alt="hero image for laketown chamber of commerce">
+                <picture>
+                    <source srcset="images/wdd230-org-med.jpg" media="(min-width: 800px)">
+                    <source srcset="images/wdd230-org-large.jpg" media="(min-width: 1024px)"> 
+                    <img src="images/wdd230-org-small.jpg" alt="hero image for laketown chamber of commerce">
+                </picture>
             </div>
-        </section>
-        <section id="whatshappening">
+        </div>
+        <div id="whatshappening">
             <div class="events">Events</div>
                 <a href="https://unsplash.com/photos/bXbi1jJVDf0" target="_blank"><img id="events" src="images/events.jpg" alt="dinners in the inn" width="100" height="100"></a>
-        </section>
-        <section id="weather-section">
-            <div class="weathersection">
+        </div>
+        <div id="weather-div">
+            <div class="weatherdiv">
                 <h3>Weather Summary</h3>
                     <a href="https://unsplash.com/photos/KWTkd7mHqKE" target="_blank"><img id="clouds" src="images/clouds.jpg" alt="clouds over the lake"></a>
-                    <p>Wind Chill: <div id="howCold">Wind Chill: </div></p>
-                    <p>Temperature: <div id="cold">Temperature: </div></p>
+                    <div>Wind Chill: <span id="howCold">Wind Chill: </span></div>
+                    <div>Temperature: <span id="cold">Temperature: </span></div>
             </div>
-        </section>
-        <section id="hotoffthepress">
+        </div>
+        <div id="hotoffthepress">
             <div class="news">News</div>
                 <a href="https://www.istockphoto.com/vector/town-crier-gm165517964-24325561" target="_blank"><img id="newshere" src="images/town_crier.jpg" alt="news ahead" width="100" height="50"></a>
-        </section>
-        <section id="spotlights-section">
+        </div>
+        <div id="spotlights-div">
             <div class="spotlights">
-                <section>
+                <div>
                     <div class="spotlight1">Find 'em All</div>
                     Need a tracker? WE GOT 'EM! Come find us at 15 Laketown Way and we will get you going to find whatever you are looking for! Need to find your dog? A goblin who took your jewelery? Your estranged mother-in-law? No matter the issue we will find em!
-                </section>
-                <section>
+                </div>
+                <div>
                     <div class="spotlight2">Miners Wanted</div>
                     The Miners guild has struck it rich and we need more people to come help! Put in your application at town hall or speak with Bard and he will get you started
-                </section>  
-                <section>
+                </div>  
+                <div>
                     <div class="spotlight3">Agricouture</div>
                     Need some fashionable clothes to farm in? We are looking for someone willing to mend and sew new clothes for our farmers in need.
-                </section>
+                </div>
             </div>
-        </section>
-        <section id="wantin">
+        </div>
+        <div id="wantin">
             <div class="join">Interested? Join here</div>
-        </section>
+        </div>
     </main>
     <footer>
         <img src="images/logo.svg.svg" width="50" height="50" alt="Laketown chamber of commerce logo"><a href="https://goo.gl/maps/JtLYFcWp3DSvZvSp9" target="_blank"><p>Location:2 Laketown Way, Laketown, Rhovanion, Middle Earth </p></a><p>&copy;<span id="theCurrentYear"></span> Mike Helm Pocatello, ID &LT;(^.^)> Last Modified <span id="date"></span></p>

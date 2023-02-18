@@ -7,8 +7,8 @@ function windChill(tempF, speed) {
     }
 }
 
-var temperature = parseFloat(prompt("Enter the air temperature in Fahrenheit:"));
-var windSpeed = parseFloat(prompt("Enter the wind speed in miles per hour:"));
+//var temperature = parseFloat(prompt("Enter the air temperature in Fahrenheit:"));
+//var windSpeed = parseFloat(prompt("Enter the wind speed in miles per hour:"));
 
 document.getElementById("howCold").innerHTML=windChill(temperature,windSpeed);
 document.getElementById("cold").innerHTML= temperature + "°F";

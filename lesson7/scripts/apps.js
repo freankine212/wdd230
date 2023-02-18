@@ -27,3 +27,4 @@ if ("IntersectionObserver" in window) { //Is there an intersetion observer class
         loadImages(img);
     });
 }
+
