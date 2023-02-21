@@ -161,13 +161,13 @@ nav ul li.active a{
 
 /* Main stuff */
 main{
-    padding: 40px;
+    /*padding: 40px;*/
     background-color: var(--secondary-bg);
     color: var(--secondary-fg);
     border-style:ridge;
     border-color:var(--secondary-bg);
     display: flex;
-    flex-flow: column wrap;
+    flex-direction: column;
 }
 
 main h2,h3,h4 {
@@ -175,32 +175,33 @@ main h2,h3,h4 {
     filter: brightness(150%);
 }
 
+#herooo{
+    width:90%;
+    margin: 0 auto;
+}
+
 .herodiv{
     margin: 10px auto;
     position: relative;
     border: 1px;
-    width: auto;
+    width: 100%;
     align-items: center;
 }
-.herodiv>picture{
-    width: auto;
+
+
+
+.heroimg{
+    max-width:400px;
 }
-#herooo{
-    width:auto;
-}
-.hero-picture{
-    margin: 10px auto;
-    position: relative;
-    border: 1px;
-    max-width: 100px;
-    max-height: 250px;
+
+.heroimg img{
+    width: 100%;
 }
 
 div {
-    /*border-style: double;
+    /*border-style: double; */
     /*border-color: var(--pop-color);*/
     /* max-width: fit-content; */
-    width: 100%;
     color: var(--primary-fg);
     background-color: #F5FBDF;
     margin: 1rem;
@@ -208,29 +209,56 @@ div {
     
 }
 
-.weatherdiv{
-    width:100%;    
+#weather-div{
+    width:70%;  
+    margin: 0 auto;  
 }
-
-#spotlights-section{
+#clouds {
     width: 100%;
 }
 
-#spotlights-div{
-    width:100%;
+.weatherdiv {
+    width: 60%;
+    
 }
+
+
+#spotlights-div{
+    width:90%;
+    margin:0 auto;
+}
+.spotlights{
+    max-width: 100%;
+}
+
+
+
 #events{
     width:50%;
 }
 
 #newshere {
-    width: 100%;
+    width: 90%;
     height: 90%;
 }
 
 #whatshappening {
-    width: 100%;
+    width: 90%;
+    margin: 10px auto;
 }
+
+#hotoffthepress{
+    width: 90%;
+}
+
+#wantin{
+    width:90%;
+    margin: 0 auto;
+}
+.join{
+
+}
+
 /* Footer stuff */
 
 footer{
@@ -245,16 +273,10 @@ footer{
 }
 
 /* Brian did this */
-#clouds {
-    width: 100%;
-}
-/*
-.weathersection {
-    width: 100%;
-} */
-div { /* Use padding to space stuff out.*/
+ 
+/*div { Use padding to space stuff out.
     margin: 0;
-}
+
 .weatherdiv {
     grid-template-columns: 1/2;
     grid-template-rows: 2/3;
@@ -262,5 +284,5 @@ div { /* Use padding to space stuff out.*/
 }
 #weather-div {
     width: 100%;
-}
+} 
 
