@@ -176,7 +176,7 @@ main h2,h3,h4 {
 }
 
 #herooo{
-    width:90%;
+    width:100%;
     margin: 0 auto;
 }
 
@@ -191,26 +191,26 @@ main h2,h3,h4 {
 
 
 .heroimg{
-    max-width:400px;
+    /*max-width:400px;*/
 }
 
 .heroimg img{
     width: 100%;
 }
 
-div {
+main > div {
     /*border-style: double; */
     /*border-color: var(--pop-color);*/
     /* max-width: fit-content; */
     color: var(--primary-fg);
     background-color: #F5FBDF;
-    margin: 1rem;
+    /* margin: 1rem; */
     display: block;
     
 }
 
 #weather-div{
-    width:70%;  
+    width:100%;  
     margin: 0 auto;  
 }
 #clouds {
@@ -218,14 +218,14 @@ div {
 }
 
 .weatherdiv {
-    width: 60%;
+    width: 100%;
     
 }
 
 
 #spotlights-div{
-    width:90%;
-    margin:0 auto;
+    width:100%;
+  /*  margin:0 auto; */
 }
 .spotlights{
     max-width: 100%;
@@ -234,25 +234,25 @@ div {
 
 
 #events{
-    width:50%;
+    width:100%;
 }
 
 #newshere {
-    width: 90%;
+    width: 100%;
     height: 90%;
 }
 
 #whatshappening {
-    width: 90%;
+    width: 100%;
     margin: 10px auto;
 }
 
 #hotoffthepress{
-    width: 90%;
+    width: 100%;
 }
 
 #wantin{
-    width:90%;
+    width:100%;
     margin: 0 auto;
 }
 .join{
@@ -285,4 +285,20 @@ footer{
 #weather-div {
     width: 100%;
 } 
+*/
+
+#herooo,
+#whatshappening,
+#weather-div,
+#wantin,
+#hotoffthepress,
+#spotlights-div {
+    width:100%;
+    height:100%;
+    background-color: #F5FBDF;
+    padding: 10px;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
 
