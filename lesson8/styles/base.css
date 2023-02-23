@@ -1,0 +1,48 @@
+html{
+    font-family: sans-serif;
+}
+body{
+    text-align: center;
+    max-width: 65%;
+    margin: 0px auto;
+}
+h1{
+    text-align: left;
+}
+table{
+    border-collapse: collapse;
+    border: 2px solid black;
+    letter-spacing: 1px;
+    font-size: 0.8rem;
+    width:45%;
+    text-align: center;
+}
+
+td, th{
+    border: 1px solid black;
+    padding: 15px;
+}
+
+th{
+    background-color: gray;
+    color:white;
+    height: auto;
+}
+
+td{
+    text-align: center;
+    height:auto;
+}
+tr:hover{
+    background-color: rgba(205, 127, 50,0.4);
+}
+tbody:nth-child(odd){
+    background-color:aqua;
+}
+tbody{
+    font-size:100%;
+    font-style: italic;
+}
+caption{
+    caption-side: bottom;    
+}
