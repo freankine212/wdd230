@@ -135,5 +135,8 @@
 	#discover{
 		display: flex;
 		flex-direction: column;
-	} 
 
+	} 
+	#discover:hover{
+		background-color: rgba(103, 120, 199, 0.5);
+	}
