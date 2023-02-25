@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mike H's Chamber Join Page for BYU-I WDD230 Class">
+    <meta name="keywords" content="HTML, CSS, Javascript">
+    <meta name="Author" content="Mike Helm">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="icon" href="favicon.ico">
+    <title>Join us Citizen!</title>
+</head>
+<body>
+    <header>
+        <div id="day"></div>
+        <div id="banner">
+            <img id="logo" src="images/logo.svg.svg" width=100 height=100 alt="The logo for the Laketown, Middle-Earth Chamber of Commerce">
+            <h1> Laketown Chamber of Commerce Unite Page</h1>
+            <div id="current-date">date</div>
+        </div>
+        <nav>
+            <button id='hamburgerBtn'><span>&#9776;</span><span>X</span></button>
+            <ul id='primaryNav'>
+                <li><a href="index.html">Home</a> </li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="join.html">Unite</a></li>
+                <li><a href="#">Link3</a></li>
+                <li><a href="https://www.linkedin.com"><img src="images/linkedin_logo.svg" width="20" height="20" alt="linkedin Link"></a></li>
+                <li><a href="https://www.facebook.com"><img src="images/facebook_logo.svg" width="20" height="20" alt="facebook Link"></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form method="get" action="thanks.html">
+            <fieldset>
+                <legend>Applicant Information</legend>
+                <label class="top">First Name*: <input type="text" required></label>
+                <label class="top">Last Name*: <input type="text" required></label>
+                <label class="top">Business Title: <input type="text"></label>
+                <label class="top">Email*: <input type="email" placeholder="test@test.com" required></label>
+                <label class="top">Cellphone Number*: <input type="tel" placeholder="1231231234" required></label>
+                <label class="top">Business Name/Title*: <input type="text" required></label>
+            </fieldset>
+            <fieldset>
+                <legend>Membership Type</legend>
+                <div>Member</div>
+                <label class="sbs"><input type="radio" name="member" value="np">NP Membership</label>
+                <label class="sbs"><input type="radio" name="member" value="bronze">Bronze Membership</label>
+                <label class="sbs"><input type="radio" name="member" value="silver">Silver Membership</label>
+                <label class="sbs"><input type="radio" name="member" value="gold">Gold Membership</label>
+            </fieldset>
+            <fieldset>
+                <legend>About the Business</legend>
+                <label class="top">Tell us about your business citizen<textarea rows="3" cols="10" name="business" placeholder="Enter details about your business here, Citizen:"></textarea></label>
+            </fieldset>
+            <input type="submit" value="Announce My Decision to Join" class="submitBtn">
+
+        </form>
+    </main>
+    <footer>
+        <img src="images/logo.svg.svg" width="50" height="50" alt="Laketown chamber of commerce logo"><a href="https://goo.gl/maps/JtLYFcWp3DSvZvSp9" target="_blank"><p>Location:2 Laketown Way, Laketown, Rhovanion, Middle Earth </p></a><p>&copy;<span id="theCurrentYear"></span> Mike Helm Pocatello, ID &LT;(^.^)> Last Modified <span id="date"></span></p>
+    </footer>
+<script src="scripts/apps.js"></script>
+<script src="scripts/hamburger.js"></script>
+<script src="scripts/windchill.js"></script>
+</body>
+</html>
