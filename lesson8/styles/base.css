@@ -14,30 +14,30 @@ table{
     border: 2px solid black;
     letter-spacing: 1px;
     font-size: 0.8rem;
-    width:45%;
+    width:auto;
     text-align: center;
+    height:auto;
 }
 
 td, th{
     border: 1px solid black;
     padding: 15px;
+    height:10px;
 }
 
 th{
     background-color: gray;
     color:white;
-    height: auto;
+    height: 50px;
 }
 
 td{
     text-align: center;
     height:auto;
+    width: auto;
 }
-tr:hover{
-    background-color: rgba(205, 127, 50,0.4);
-}
-tbody:nth-child(odd){
-    background-color:aqua;
+tbody:nth-child(even){
+    background-color:rgba(0,0,0,.1);
 }
 tbody{
     font-size:100%;

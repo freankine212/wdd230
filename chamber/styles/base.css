@@ -323,6 +323,7 @@ form label.top, form div{
 }
 
 form label.top input, form label.top select{
+    -webkit-appearance: none;
     /*display: block;*/
     font-size: 1rem;
     border: solid 1px #999;
@@ -356,4 +357,46 @@ form label.top input:required{
 
 form label.top input:required:valid{
     border-left: green solid 6px;
+}
+
+table{
+    border-collapse: collapse;
+    border: 2px solid black;
+    border-radius: 20px;
+    letter-spacing: 1px;
+    font-size: 0.8rem;
+    width:auto;
+    text-align: center;
+}
+
+td, th{
+    border: 1px solid black;
+    padding: 15px;
+    width: auto;
+    
+}
+
+th{
+    background-color: gray;
+    color:white;
+    height: auto;
+}
+
+td{
+    text-align: center;
+    height:auto;
+}
+tr:hover{
+    background-color: rgba(205, 127, 50,0.4);
+}
+tbody:nth-child(odd){
+    background-color:aqua;
+}
+tbody{
+    font-size:100%;
+    font-style: italic;
+    width: auto;
+}
+caption{
+    caption-side: bottom;    
 }
