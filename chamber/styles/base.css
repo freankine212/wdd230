@@ -400,3 +400,6 @@ tbody{
 caption{
     caption-side: bottom;    
 }
+#members{
+    width:100%;
+}

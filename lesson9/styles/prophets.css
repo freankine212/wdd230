@@ -1,0 +1,33 @@
+header {
+    text-align: center;
+}
+
+div.cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    grid-gap: 10px;
+    width:100%;
+}
+
+section{
+    background-color: rgb(135, 28, 206);
+    border: 5px solid black;
+    padding: 15px;
+    text-align: center;
+    border-radius: 3px;
+}
+
+h2 {
+    color: rgb(0, 0, 0);
+    /* dark green */
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top: 0;
+}
+
+
+section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px; /* rounded corners */
+}
