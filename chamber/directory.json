@@ -1,0 +1,110 @@
+{
+    "directoryName": "Laketown Business Directory",
+    "townName": "Laketown",
+    "formed": 2900,
+    "active": true,
+    "mayorFirst": "Bard",
+    "mayorLast": "the Hunter",
+    "businessNames": [
+        {
+            "businessName":"Find 'em All",
+            "businessType":"service",
+            "ownerFirst": "Carl",
+            "ownerLast":"Findem",
+            "address": "15 Laketown Way",
+            "phoneNumber": 2941294242,
+            "websiteUrl": "www.findemall.com",
+            "imageurl": "<placeholder>"
+        },
+        {
+            "businessName":" Agricouture",
+            "businessType":"goods",
+            "ownerFirst": "Sarah",
+            "ownerLast":"Tinyfoot",
+            "address": "16 Laketown Way",
+            "phoneNumber": 2941294244,
+            "websiteUrl": "www.bestclothingaround.com",
+            "imageurl": "<placeholder>"
+        },
+        {
+            "businessName":"Mining Guild",
+            "businessType":"goods",
+            "ownerFirst": "Brom",
+            "ownerLast":"Heartfist",
+            "address": "2 Laketown Way",
+            "phoneNumber": 2941294243,
+            "websiteUrl": "www.minershere.com",
+            "imageurl": "<placeholder>"
+        },
+        {
+            "businessName":"The Galloping Hart",
+            "businessType":"service",
+            "ownerFirst": "Perry",
+            "ownerLast":"Lawns",
+            "address": "12 Lakeside Drive",
+            "phoneNumber": 2941294241,
+            "websiteUrl": "",
+            "imageurl": "<placeholder>"
+        },
+        {
+            "businessName":"Smithy's Smithy",
+            "businessType":"goods",
+            "ownerFirst": "Smithy",
+            "ownerLast":"Smith",
+            "address": "Next to Archery Laketown",
+            "phoneNumber": 2941294245,
+            "websiteUrl": "www.smithit.com",
+            "imageurl": "<placeholder>"
+        },
+        {
+            "businessName":"Laketown Boats n Stuff",
+            "businessType":"service",
+            "ownerFirst": "Jorge",
+            "ownerLast":"Jorgensen",
+            "address": "2 Lake St",
+            "phoneNumber": 2941294246,
+            "websiteUrl": "www.boatsnstuff.com",
+            "imageurl": "<placeholder>"
+        },
+        {
+            "businessName":"D.E.H (Dwarves, Elves, Humans clothing)",
+            "businessType":"goods",
+            "ownerFirst": "Alluv",
+            "ownerLast":"Theraces",
+            "address": "17 Laketown Way",
+            "phoneNumber": 2941294247,
+            "websiteUrl": "",
+            "imageurl": "<placeholder>"
+        },
+        {
+            "businessName":"Pharmasaurus Rx",
+            "businessType":"goods/service",
+            "ownerFirst": "Doc",
+            "ownerLast":"Seriously its Doc",
+            "address": "911 Healing way",
+            "phoneNumber": 2941294248,
+            "websiteUrl": "www.whatevenisapharmacy.com",
+            "imageurl": "<placeholder>"
+        },
+        {
+            "businessName":"Archery Laketown",
+            "businessType":"goods/service",
+            "ownerFirst": "Bard",
+            "ownerLast":"The Hunter",
+            "address": "Next to Smithy's Smithy",
+            "phoneNumber": 2941294249,
+            "websiteUrl": "www.youbowitwefletchit.com",
+            "imageurl": "<placeholder>"
+        },
+        {
+            "businessName":"Less Inn",
+            "businessType":"service",
+            "ownerFirst": "Eustace",
+            "ownerLast":"Bellweather",
+            "address": "19 Lakeside Dr",
+            "phoneNumber": 2941294240,
+            "websiteUrl": "www.notasgoodasgallopinghart.com",
+            "imageurl": "<placeholder>"
+        }
+    ]
+}
