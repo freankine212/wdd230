@@ -1,10 +1,4 @@
 {
-    "directoryName": "Laketown Business Directory",
-    "townName": "Laketown",
-    "formed": 2900,
-    "active": true,
-    "mayorFirst": "Bard",
-    "mayorLast": "the Hunter",
     "businessNames": [
         {
             "businessName":"Find 'em All",
@@ -14,7 +8,7 @@
             "address": "15 Laketown Way",
             "phoneNumber": 2941294242,
             "websiteUrl": "www.findemall.com",
-            "imageurl": "<placeholder>"
+            "Logo": "images/discover/axe.jpg"
         },
         {
             "businessName":" Agricouture",
@@ -24,7 +18,7 @@
             "address": "16 Laketown Way",
             "phoneNumber": 2941294244,
             "websiteUrl": "www.bestclothingaround.com",
-            "imageurl": "<placeholder>"
+            "Logo": "images/discover/axe.jpg"
         },
         {
             "businessName":"Mining Guild",
@@ -34,7 +28,7 @@
             "address": "2 Laketown Way",
             "phoneNumber": 2941294243,
             "websiteUrl": "www.minershere.com",
-            "imageurl": "<placeholder>"
+            "Logo": "images/discover/axe.jpg"
         },
         {
             "businessName":"The Galloping Hart",
@@ -44,7 +38,7 @@
             "address": "12 Lakeside Drive",
             "phoneNumber": 2941294241,
             "websiteUrl": "",
-            "imageurl": "<placeholder>"
+            "Logo": "images/discover/axe.jpg"
         },
         {
             "businessName":"Smithy's Smithy",
@@ -54,7 +48,7 @@
             "address": "Next to Archery Laketown",
             "phoneNumber": 2941294245,
             "websiteUrl": "www.smithit.com",
-            "imageurl": "<placeholder>"
+            "Logo": "images/discover/axe.jpg"
         },
         {
             "businessName":"Laketown Boats n Stuff",
@@ -64,7 +58,7 @@
             "address": "2 Lake St",
             "phoneNumber": 2941294246,
             "websiteUrl": "www.boatsnstuff.com",
-            "imageurl": "<placeholder>"
+            "Logo": "images/discover/axe.jpg"
         },
         {
             "businessName":"D.E.H (Dwarves, Elves, Humans clothing)",
@@ -74,7 +68,7 @@
             "address": "17 Laketown Way",
             "phoneNumber": 2941294247,
             "websiteUrl": "",
-            "imageurl": "<placeholder>"
+            "Logo": "images/discover/axe.jpg"
         },
         {
             "businessName":"Pharmasaurus Rx",
@@ -84,7 +78,7 @@
             "address": "911 Healing way",
             "phoneNumber": 2941294248,
             "websiteUrl": "www.whatevenisapharmacy.com",
-            "imageurl": "<placeholder>"
+            "Logo": "images/discover/axe.jpg"
         },
         {
             "businessName":"Archery Laketown",
@@ -94,7 +88,7 @@
             "address": "Next to Smithy's Smithy",
             "phoneNumber": 2941294249,
             "websiteUrl": "www.youbowitwefletchit.com",
-            "imageurl": "<placeholder>"
+            "Logo": "images/discover/axe.jpg"
         },
         {
             "businessName":"Less Inn",
@@ -104,7 +98,7 @@
             "address": "19 Lakeside Dr",
             "phoneNumber": 2941294240,
             "websiteUrl": "www.notasgoodasgallopinghart.com",
-            "imageurl": "<placeholder>"
+            "Logo": "images/discover/axe.jpg"
         }
     ]
 }
