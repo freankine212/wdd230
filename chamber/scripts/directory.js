@@ -20,9 +20,9 @@ const displayDirectory = (businessNames) => {
 
         businessName.textContent = `${business.businessName}`;
         address.textContent = `Address: ${business.address}`;
-        phoneNumber.innerHTML = `Phone number: ${business.phoneNumber}`;
+        phoneNumber.innerHTML = `Phone number: ${business.phoneNumber}<br>`;
 
-        websiteUrl.href=business.websiteUrl;
+        websiteUrl.innerHTML= `${business.websiteUrl}`;
 
         //Logo here
         portrait.setAttribute('src', business.Logo);
