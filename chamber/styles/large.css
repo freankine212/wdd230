@@ -148,3 +148,13 @@
 	form{
 		grid-row: 1/4;
 	}
+
+	#directory:div.cards{
+		display:grid;
+		width:100%;
+		
+	}
+
+	#directory:section{
+		padding: 15px;
+	}

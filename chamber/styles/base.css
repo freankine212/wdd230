@@ -403,3 +403,7 @@ caption{
 #members{
     width:100%;
 }
+
+#directory:section{
+    border: solid black;
+}

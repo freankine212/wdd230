@@ -16,13 +16,14 @@ const displayDirectory = (businessNames) => {
         let address = document.createElement('p');
         let phoneNumber = document.createElement('p');
         let websiteUrl = document.createElement('a');
+        let membership = document.createElement('p');
         let portrait = document.createElement('img');
 
         businessName.textContent = `${business.businessName}`;
         address.textContent = `Address: ${business.address}`;
         phoneNumber.innerHTML = `Phone number: ${business.phoneNumber}<br>`;
-
-        websiteUrl.innerHTML= `${business.websiteUrl}`;
+        membership.textContent=`Membership type: ${business.membership}`
+        
 
         //Logo here
         portrait.setAttribute('src', business.Logo);
@@ -31,11 +32,20 @@ const displayDirectory = (businessNames) => {
         portrait.setAttribute('width', '140');
         portrait.setAttribute('height', '240');
 
+        websiteUrl.innerHTML= `${business.websiteUrl}`;
+
+
+
+
+
         card.appendChild(businessName);
         card.appendChild(address);
         card.appendChild(phoneNumber);
-        card.appendChild(websiteUrl);
         card.appendChild(portrait);
+        
+        card.appendChild(websiteUrl);
+        
+        card.appendChild(membership);
 
         cards.appendChild(card);
     })
