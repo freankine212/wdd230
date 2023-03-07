@@ -32,7 +32,6 @@ p {
 }
 
 #logo{
-    align-items: left;
     width:auto;
 }
 /* Header stuff */
@@ -402,8 +401,4 @@ caption{
 }
 #members{
     width:100%;
-}
-
-#directory:section{
-    border: solid black;
 }
