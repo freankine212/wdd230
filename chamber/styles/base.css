@@ -386,10 +386,14 @@ td{
     height:auto;
 }
 tr:hover{
-    background-color: rgba(205, 127, 50,0.4);
+    background-color: rgba(238, 215, 12, 0.815);
 }
-tbody:nth-child(odd){
-    background-color:aqua;
+tr:nth-child(odd){
+    background-color:var(--secondary-bg);
+}
+tr{
+    width:auto;
+    background-color: var(--primary-bg);
 }
 tbody{
     font-size:100%;
@@ -397,7 +401,8 @@ tbody{
     width: auto;
 }
 caption{
-    caption-side: bottom;    
+    caption-side: bottom;
+    background-color: var(--primary-bg);    
 }
 #members{
     width:100%;
