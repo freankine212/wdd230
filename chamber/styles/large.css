@@ -6,7 +6,6 @@
 		margin-top: 5%;
 		margin-bottom: 5%; 
 		/* column-gap: .05%; */
-		max-height: auto;
 		width:auto;
 	}
 	
@@ -66,7 +65,7 @@
 	
 	/*events*****/
 	#whatshappening{
-		width: 50;
+		width: 50%;
 		height: max-content;
 		grid-column: 1/1;
 		grid-row: 1/4;

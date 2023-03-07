@@ -32,7 +32,7 @@ p {
 }
 
 #logo{
-    display:left;
+    align-items: left;
     width:auto;
 }
 /* Header stuff */
