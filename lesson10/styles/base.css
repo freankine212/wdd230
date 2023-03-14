@@ -1,0 +1,10 @@
+h1{
+    border:solid black;
+    border-radius: 2px;
+    margin: 0;
+    width:auto;
+}
+p{
+    backdrop-filter: blur(10px);
+    font-weight: 400;
+}
