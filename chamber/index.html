@@ -52,9 +52,14 @@
         <div id="weather-div">
             <div class="weatherdiv">
                 <h3>Weather Summary</h3>
-                    <a href="https://unsplash.com/photos/KWTkd7mHqKE" target="_blank"><img id="clouds" src="images/clouds.jpg" alt="clouds over the lake"></a>
-                    <div>Wind Chill: <span id="howCold">Wind Chill: </span></div>
-                    <div>Temperature: <span id="cold">Temperature: </span></div>
+                <p>The current temperature in Laketown, Rhovanion is <span id="current-temp"></span> &deg;F</p>
+                <h4>Current Condition Icon</h4>
+                <figure>
+                    <img src="" alt="" id="weather-icon"/>
+                    <figcaption></figcaption>
+                </figure>
+                <p>The current windspeed is: <span id="windspeed"></span> MPH</p>
+                <p>It feels like: <span id="feels-like"></span> &deg;F</p>    
             </div>
         </div>
         <div id="hotoffthepress">
@@ -98,6 +103,6 @@
     </footer>
 <script src="scripts/apps.js"></script>
 <script src="scripts/hamburger.js"></script>
-<script src="scripts/windchill.js"></script>
+<script src="scripts/weather-api.js"></script>
 </body>
 </html>
