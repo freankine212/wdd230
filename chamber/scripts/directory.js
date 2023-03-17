@@ -1,3 +1,5 @@
+
+
 const url = 'https://freankine212.github.io/wdd230/chamber/directory.json';
 
 async function getDirectoryData() {
@@ -6,6 +8,19 @@ async function getDirectoryData() {
     console.table(data.businessNames);
     displayDirectory(data.businessNames);
 }
+
+const gridbutton = document.querySelector("#grid");
+const listbutton = document.querySelector("#list");
+const display = document.querySelector("article");
+
+gridbutton.addEventListener("click",() =>{
+    display.classList.add("grid");
+    display.classList.remove("list");
+})
+listbutton.addEventListener("click",() =>{
+    display.classList.add("list");
+    display.classList.remove("grid");
+})
 
 const displayDirectory = (businessNames) => {
     const cards=document.querySelector('div.cards');
@@ -52,3 +67,4 @@ const displayDirectory = (businessNames) => {
 }
 
 getDirectoryData();
+

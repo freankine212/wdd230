@@ -407,3 +407,37 @@ caption{
 #members{
     width:100%;
 }
+
+#menu{
+    position: absolute;
+}
+
+div.cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    grid-gap: 10px;
+    width:100%;
+}
+
+.grid .cards{
+    background-color: #C3B7AC;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px,1fr));
+    grid-gap: 20px;
+    justify-items: center;
+    margin-bottom: 5px;
+}
+
+.list section{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    margin: 0;
+    padding-left: 10px;
+    padding-bottom: 5px;
+}
+.list img{
+    display: none;
+}
+.list section:nth-child(odd){
+    background-color: beige;
+}
