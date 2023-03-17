@@ -426,6 +426,7 @@ div.cards{
     grid-gap: 20px;
     justify-items: center;
     margin-bottom: 5px;
+    margin-left:200px;
 }
 
 .list section{
@@ -441,3 +442,4 @@ div.cards{
 .list section:nth-child(odd){
     background-color: beige;
 }
+
