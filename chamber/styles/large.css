@@ -162,5 +162,5 @@
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
 		grid-gap: 10px;
-		width:100%;
+		width:auto;
 	}
