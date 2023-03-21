@@ -167,6 +167,7 @@ main{
     border-color:var(--secondary-bg);
     display: flex;
     flex-direction: column;
+    width: auto;
 }
 
 main h2,h3,h4 {
@@ -183,7 +184,7 @@ main h2,h3,h4 {
     margin: 10px auto;
     position: relative;
     border: 1px;
-    width: 100%;
+    width: auto;
     align-items: center;
 }
 
@@ -223,7 +224,7 @@ main > div {
 
 
 #spotlights-div{
-    width:100%;
+    width:auto;
   /*  margin:0 auto; */
 }
 .spotlights{
