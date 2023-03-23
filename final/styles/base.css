@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Martian+Mono:wght@100&display=swap');
+/* font-family: 'Gloria Hallelujah', cursive;
+font-family: 'Martian Mono', monospace;
+*/
+
+:root{ 
+    --primary-bg: rgb(247, 178, 173);
+    --primary-fg: rgb(43, 65, 65);
+    --secondary-fg: rgb(122, 155, 118);
+    --secondary-bg: rgb(206, 183, 179);
+    --pop-color: rgb(244, 255, 82);
+    --body-font:'Gloria Hallelujah', cursive;
+    --heading-font:'Martian Mono', monospace;
+}
+
+html{
+    padding: 0px;
+    font-family: var(--body-font);
+}
+
+body{
+    text-align: center;
+    max-width: 65%;
+    margin: 0px auto;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: var(--heading-font)
+}
+
+p{
+    font-family: var(--body-font);
+}
+
+#logo{
+    width:auto;
+}
+
+
+/* Header */
+header{
+    background-color: var(--primary-bg);
+    color: var(--primary-fg);
+}
+
+header div{
+    align-self:center;
+    text-align: center;
+    background-color: var(--primary-bg);
+}
+
+header #banner{
+    align-self:center;
+    text-align: center;
+    width: auto;
+    background-color: var(--primary-bg);
+}
+
+/* main */
+main{
+background-color: var(--primary-bg);
+color: var(--primary-fg);
+}
+
+/* footer*/
+footer{
+    background-color: var(--primary-bg);
+    color: var(--primary-fg);
+}

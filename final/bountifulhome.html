@@ -7,25 +7,57 @@
     <meta name="description" content="Mike H's Bountiful Foods Index for BYU-I WDD230 Class">
     <meta name="keywords" content="HTML, CSS, Javascript">
     <meta name="Author" content="Mike Helm">
+    <link rel="stylesheet" href="styles/base.css">
     <title>Bountiful Foods</title>
 </head>
 <body>
     <header>
-        <ul id='primaryNav'>
-            <li><a href="bountifulhome.html">Home</a> </li>
-            <li><a href="bountifulfresh.html">Freshness Abounding</a></li>
-            <li><a href="abount.html">Abount Us</a></li>
-            <li><a href="https://www.linkedin.com"><img src="images/linkedin_logo.svg" width="20" height="20" alt="linkedin Link"></a></li>
-            <li><a href="https://www.facebook.com"><img src="images/facebook_logo.svg" width="20" height="20" alt="facebook Link"></a></li>
-            <li><a href="https://www.myspace.com"><img src="images/Myspace_logo.svg" width="20" height="20" alt="myspace Link"></a></li>
-        </ul>
-    </nav>
+        <div id="banner">
+            <img id=logo src="images/logo2.webp" alt="logo for bountiful foods" width="150" height="150">
+            <h1>Bountiful Foods</h1>
+        </div>
+        <nav>    
+            <ul id='primaryNav'>
+                <li><a href="bountifulhome.html">Home</a> </li>
+                <li><a href="bountifulfresh.html">Freshness Abounding</a></li>
+                <li><a href="abount.html">Abount Us</a></li>
+                <li><a href="https://www.linkedin.com"><img src="images/linkedin_logo.svg" width="20" height="20" alt="linkedin Link"></a></li>
+                <li><a href="https://www.facebook.com"><img src="images/facebook_logo.svg" width="20" height="20" alt="facebook Link"></a></li>
+                <li><a href="https://www.myspace.com"><img src="images/Myspace_logo.svg" width="20" height="20" alt="myspace Link"></a></li>
+            </ul>
+        </nav>
     </header>
     <main>
+        <section class="home">
+            <div id="hero">
+                <div class="herodiv">
+                    <picture class="heroimg">
 
+                    </picture>
+                </div>
+            </div>
+            
+            <div id="calltoaction">
+                <h2>Hey man!</h2>
+                <div class="call"><a href="https://freankine212.github.io/wdd230/final/bountifulfresh.html" target="_blank" >Want to become Sir Mix-a-Lot? How? Click here!</a></div>
+            </div>
+            <div id="qanda">
+                <h2>Got</h2>
+                <div class="quest">Questions?</div>
+            </div>
+            <div id="weatherstuff">
+                <h2>Brrr</h2>
+                <div class="weather">Hows the weather today Bob?</div>
+            </div>
+            <div class="drinksmade">
+                <h2>Drink master</h2>
+                <div class="made"># of Drinks made</div>
+            </div>
+        </section>
     </main>
     <footer>
-
+        <p>&copy;<span id="theCurrentYear"></span> Mike Helm Pocatello, ID &LT;(^.^)> Last Modified <span id="date"></span></p>
     </footer>
+    <script src="scripts/apps.js" ></script>
 </body>
 </html>
