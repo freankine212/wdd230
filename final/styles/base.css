@@ -142,6 +142,9 @@ background-color: var(--primary-bg);
 color: var(--primary-fg);
 }
 
+form label.top{
+    display: block;
+}
 /* footer*/
 footer{
     background-color: var(--primary-bg);
