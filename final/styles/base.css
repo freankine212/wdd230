@@ -56,6 +56,86 @@ header #banner{
     background-color: var(--primary-bg);
 }
 
+nav{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: right;
+    align-self:right;
+    width: auto;
+    border-style: groove;
+    padding-left: 3rem;
+    border-color: var(--secondary-bg);
+    border-radius: 2%;
+    position: relative;
+    padding: left;
+}
+
+nav a{
+    padding: 7px 5px;
+    width: auto;
+}
+
+nav a:link{
+    color:var(--primary-fg)
+}
+
+nav a:visited{
+    color: var(--primary-fg);
+}
+
+a:link{
+    color:var(--pop-color);
+}
+
+a:visited{
+    color:var(--primary-fg);
+}
+
+nav button{
+    margin: .2rem 2vw;
+    justify-content: center;
+}
+nav ul{
+    list-style:none;
+    padding: 0;
+    margin:0;
+}
+
+nav ul{
+    display: none;
+}
+
+nav ul.open{
+    display: block;
+}
+
+nav ul li a{
+    display: block;
+    padding: .8rem 2vw;
+    text-decoration: none;
+
+}
+
+#hamburgerBtn {
+    padding: 5px 5px;
+    z-index: 300;
+    width: min-content;
+    align-self: center;
+}
+
+#hamburgerBtn img{
+    height: 30px;
+    width: 30px;
+}
+
+#hamburgerBtn span:nth-child(1){display: block;}
+#hamburgerBtn span:nth-child(2){display: none;}
+
+#hamburgerBtn.open span:nth-child(1){display: none;}
+#hamburgerBtn.open span:nth-child(2){display: block;}
+
+
 /* main */
 main{
 background-color: var(--primary-bg);

@@ -8,6 +8,7 @@
     <meta name="keywords" content="HTML, CSS, Javascript">
     <meta name="Author" content="Mike Helm">
     <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large.css">
     <title>Bountiful Foods</title>
 </head>
 <body>
@@ -16,7 +17,8 @@
             <img id=logo src="images/logo2.webp" alt="logo for bountiful foods" width="150" height="150">
             <h1>Bountiful Foods</h1>
         </div>
-        <nav>    
+        <nav>
+            <button id='hamburgerBtn'><span>&#9776;</span><span>X</span></button>    
             <ul id='primaryNav'>
                 <li><a href="bountifulhome.html">Home</a> </li>
                 <li><a href="bountifulfresh.html">Freshness Abounding</a></li>
@@ -32,7 +34,9 @@
             <div id="hero">
                 <div class="herodiv">
                     <picture class="heroimg">
-
+                        <source srcset="images/hero.jpg" media="(min-width: 800px)">
+                        <source srcset="images/hero.jpg" media="(min-width:1024px)">
+                        <img src="images/hero.jpg" alt="hero image for Bountiful Foods">
                     </picture>
                 </div>
             </div>
@@ -45,9 +49,15 @@
                 <h2>Got</h2>
                 <div class="quest">Questions?</div>
             </div>
-            <div id="weatherstuff">
+            <div id="weather-div">
                 <h2>Brrr</h2>
-                <div class="weather">Hows the weather today Bob?</div>
+                <div class="weatherdiv">Hows the weather today Bob?</div>
+                <p>Its a balmy <span id="current-temp"></span>&deg;F kiddos</p>
+                <h4></h4>
+                <figure>
+                    <img src="" alt="" id="weather-icon"/>
+                    <figcaption></figcaption>
+                </figure>
             </div>
             <div class="drinksmade">
                 <h2>Drink master</h2>
@@ -59,5 +69,7 @@
         <p>&copy;<span id="theCurrentYear"></span> Mike Helm Pocatello, ID &LT;(^.^)> Last Modified <span id="date"></span></p>
     </footer>
     <script src="scripts/apps.js" ></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/weatherapi.js"></script>
 </body>
 </html>

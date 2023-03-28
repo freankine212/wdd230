@@ -1,0 +1,19 @@
+@media only screen and (min-width: 1000px) {
+    nav{
+        align-self: end;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        position: relative;
+        top: unset;
+        right: unset;
+        background-color: unset;
+        box-sizing: border-box;
+        column-gap: 2em;
+        padding-top: 0;
+        padding-bottom: 0;
+      }
+}
