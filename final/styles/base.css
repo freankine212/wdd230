@@ -127,6 +127,7 @@ nav ul li a{
 #hamburgerBtn img{
     height: 30px;
     width: 30px;
+    align-items: center;
 }
 
 #hamburgerBtn span:nth-child(1){display: block;}
@@ -142,9 +143,29 @@ background-color: var(--primary-bg);
 color: var(--primary-fg);
 }
 
+#heroimg{
+    width: auto;
+    display: inline;
+}
+
+#calltoaction{
+    border-style: groove;
+    border-color: var(--primary-fg);
+    margin: 0;
+    padding: 17%;
+    width: auto;
+}
+
+#qanda{
+    width:auto;
+    margin: 0;
+    padding:17%;
+}
 form label.top{
     display: block;
 }
+
+
 /* footer*/
 footer{
     background-color: var(--primary-bg);
