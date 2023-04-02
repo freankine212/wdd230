@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dropdown Menu Demo</title>
+  </head>
+  <body>
+    <h1>Dropdown Menu Demo</h1>
+
+    <form>
+      <label for="fruit-select">Select a fruit:</label>
+      <select id="fruit-select" name="fruit">
+        <option value="">Select a fruit</option>
+      </select>
+    </form>
+
+    <script>
+      // Load JSON data from file
+      fetch("data.json")
+        .then(response => response.json())
+        .then(data => {
+          // Populate dropdown menu with fruit names
+          let select = document.getElementById("fruit-select");
+          data.fruits.forEach(fruit => {
+            let option = document.createElement("option");
+            option.value = fruit.name;
+            option.text = fruit.name;
+            select.appendChild(option);
+          });
+        })
+        .catch(error => console.error(error));
+    </script>
+  </body>
+</html>
