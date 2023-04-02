@@ -6,7 +6,7 @@ const captionDesc = document.querySelector('figcaption');
 const humidity = document.querySelector('#humidity');
 
 
-const url = 'https://api.openweathermap.org/data/2.5/weather?q=Encinitas&units=imperial&appid=888776a05dd616e8f6e0c4f0c0ee207e';
+const url = 'https://api.openweathermap.org/data/2.5/weather?q=Malibu&units=imperial&appid=888776a05dd616e8f6e0c4f0c0ee207e';
 
 
 async function apiFetch() {
