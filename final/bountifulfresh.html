@@ -24,7 +24,7 @@
     </header>
     <main>
         <h2>Here's how you become your very own Sir-Mix-Alot</h2>
-        <form method="get" action="alert">
+        <form method="get">
             <fieldset>
                 <legend>Drink Maker</legend>
                 <label class="top">First Name*: <input type="text" required></label>
@@ -34,18 +34,26 @@
             <fieldset>
                 <h2>Select your fillings</h2>
                 <legend>Stuffers</legend>
-                <label for = "fruit-select"> What Fruit you want?</label>
-                    <select id="fruit-select" name = "fruit">
+                <label for = "fruit-select-1"> What Fruit do you want?</label>
+                    <select id="fruit-select-1" name = "fruit">
                         <option value="">Select a fruit</option>
+                    </select> <br>
+                <label for= "fruit-select-2"> Select another Fruit?</label>    
+                    <select id="fruit-select-2" name = "fruit">
+                        <option value="">Select another fruit</option>
+                    </select><br>
+                <label for= "fruit-select-3"> Select another Fruit?</label>    
+                    <select id="fruit-select-3" name = "fruit">
+                        <option value="">Select yet another fruit</option>
                     </select>
-                    <select name="fruit-select">
-                        <option value="">Select a fruit</option>
-                    </select>
-                    <select name="fruit-select">
-                        <option value="">Select a fruit</option>
-                    </select>
+                <label class="top"><textarea rows="5" cols="15" placeholder="Whatcha lookin for?"></textarea>Special Instructions:</label>
+                <button id="show-results-btn">Show Results</button>
             </fieldset>
         </form>
+        <p id="results"></p>
+        <p id="carbs-result1"></p><p id="carbs1"></p>
+        <p id="carbs-result2"></p><p id="carbs2"></p>
+        <p id="carbs-result3"></p><p id="carbs3"></p>
     </main>
     <footer>
 
