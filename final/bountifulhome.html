@@ -8,7 +8,10 @@
     <meta name="keywords" content="HTML, CSS, Javascript">
     <meta name="Author" content="Mike Helm">
     <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="icon" href="favicon.ico">
     <title>Bountiful Foods</title>
 </head>
 <body>
@@ -18,7 +21,7 @@
             <h1>Bountiful Foods</h1>
         </div>
         <nav>
-            <button id='hamburgerBtn'><span>&#9776;</span><span>X</span></button>    
+            <button id='hamburgerBtn'><span>&#9776;</span><span>X</span></button>  
             <ul id='primaryNav'>
                 <li><a href="bountifulhome.html">Home</a> </li>
                 <li><a href="bountifulfresh.html">Freshness Abounding</a></li>
@@ -30,7 +33,7 @@
         </nav>
     </header>
     <main>
-        <section class="home">
+        <section id="home">
             <div id="hero">
                 <div class="herodiv">
                     <picture class="heroimg">
@@ -40,11 +43,13 @@
                     </picture>
                 </div>
             </div>
-            
+        <section id="call">
             <div id="calltoaction">
                 <h2>Hey man!</h2>
                 <div class="call"><a href="https://freankine212.github.io/wdd230/final/bountifulfresh.html" target="_blank" >Want to become Sir Mix-a-Lot?<br> How? Click here!</a></div>
             </div>
+        </section>
+        <section id="quest">
             <div id="qanda">
                 <form method="get" action="abount.html">
                     <fieldset>
@@ -58,17 +63,22 @@
 
                 </form>
             </div>
-            <div id="weather-div">
+        </section>
+        <section id="weather">
+            <div id="weather-display">
                 <h2>Brrr</h2>
-                <div class="weatherdiv">Hows the weather today Bob?</div>
-                <p>Its a balmy <span id="current-temp"></span>&deg;F kiddos with</p><p> a high humidity percent of<span id="humidity"></span></p>
-                <h4></h4>
-                <figure>
-                    <img src="" alt="" id="weather-icon"/>
-                    <figcaption></figcaption>
-                </figure>
-
+                <div id="current-temp">
+                <div id="description"></div>
+                    <figure>
+                        <img src="" alt="" id="weather-icon"/>
+                        <figcaption></figcaption>
+                    </figure>
+                </div>
+                <div id="humidity"></div>
+                <div id="forecast"></div>
             </div>
+        </section>
+        <section id="drinks">
             <div class="drinksmade">
                 <h2>Drink master</h2>
                 <div class="made"># of Drinks made</div>

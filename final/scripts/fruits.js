@@ -9,11 +9,11 @@ const url = 'https://freankine212.github.io/wdd230/final/fruits.json';
           let fruitSelect3 = document.getElementById("fruit-select-3");
 
           data.fruits.forEach((fruit => {
-            console.log("displayResults, fruits: ", fruit);
+            //console.log("displayResults, fruits: ", fruit);
             let option1 = document.createElement("option");
             option1.value = fruit.name.toLowerCase();
             option1.text = fruit.name;
-            carbs1.value = carbohydrates.toLowerCase();
+            const carbs1 = fruit.nutritions.carbohydrates.toFixed();
             carbs1.text = fruit.carbohydrates;
             //proten1.value = fruit.protein.toLowerCase();
             //protein1.text = fruit.protein;
@@ -28,7 +28,7 @@ const url = 'https://freankine212.github.io/wdd230/final/fruits.json';
             let option2 = document.createElement("option");
             option2.value = fruit.name.toLowerCase();
             option2.text = fruit.name;
-            carbs2.value=fruit.nutritions.carbohydrates.toLowerCase();
+            const carbs2 = fruit.nutritions.carbohydrates.toFixed();
             carbs2.text = fruit.nutritions.carbohydrates;
             //protein2.value=fruit.protein.toLowerCase();
             //protein2.text=fruit.protein;
@@ -43,7 +43,7 @@ const url = 'https://freankine212.github.io/wdd230/final/fruits.json';
             let option3 = document.createElement("option");
             option3.value = fruit.name.toLowerCase();
             option3.text = fruit.name;
-            carb3.value = fruit.nutritions.carbohydrates.toLowerCase();
+            const carbs3 = fruit.nutritions.carbohydrates.toFixed();
             carbs3.text = fruit.nutritions.carbohydrates;
             //protein3.value = fruit.protein.toLowerCase();
             //protein3.text=fruit.protein;
@@ -55,11 +55,11 @@ const url = 'https://freankine212.github.io/wdd230/final/fruits.json';
             //sugar3.text = fruit.sugar;
             fruitSelect3.appendChild(option3);
 
-            let carbtotal=0;
+            let carbTotal=0;
             data.fruits.forEach(fruit =>{
-                carbtotal += fruit.carbs1 + fruit.carbs2 + fruit.carbs3;
+                carbTotal += fruit.carbs1 + fruit.carbs2 + fruit.carbs3;
             });
-            console.log(`Total carbs: ${carbtotal.toFixed(2)}`);
+            console.log(`Total carbs: ${carbTotal(2)}`);
           }));
         })
         .catch(error => console.error(error));

@@ -7,24 +7,31 @@
     <meta name="description" content="Mike H's Bountiful Foods Index for BYU-I WDD230 Class">
     <meta name="keywords" content="HTML, CSS, Javascript">
     <meta name="Author" content="Mike Helm">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="icon" href="favicon.ico">
     <title>Bountiful Foods</title>
 </head>
 <body>
     <header>
         <img src="images/logo2.webp" alt="logo for bountiful foods">
-        <ul id='primaryNav'>
-            <li><a href="bountifulhome.html">Home</a> </li>
-            <li><a href="bountifulfresh.html">Freshness Abounding</a></li>
-            <li><a href="abount.html">Abount Us</a></li>
-            <li><a href="https://www.linkedin.com"><img src="images/linkedin_logo.svg" width="20" height="20" alt="linkedin Link"></a></li>
-            <li><a href="https://www.facebook.com"><img src="images/facebook_logo.svg" width="20" height="20" alt="facebook Link"></a></li>
-            <li><a href="https://www.myspace.com"><img src="images/Myspace_logo.svg" width="20" height="20" alt="myspace Link"></a></li>
-        </ul>
-    </nav>
+        <nav>
+            <button id='hamburgerBtn'><span>&#9776;</span><span>X</span></button>  
+            <ul id='primaryNav'>
+                <li><a href="bountifulhome.html">Home</a> </li>
+                <li><a href="bountifulfresh.html">Freshness Abounding</a></li>
+                <li><a href="abount.html">Abount Us</a></li>
+                <li><a href="https://www.linkedin.com"><img src="images/linkedin_logo.svg" width="20" height="20" alt="linkedin Link"></a></li>
+                <li><a href="https://www.facebook.com"><img src="images/facebook_logo.svg" width="20" height="20" alt="facebook Link"></a></li>
+                <li><a href="https://www.myspace.com"><img src="images/Myspace_logo.svg" width="20" height="20" alt="myspace Link"></a></li>
+            </ul>
+        </nav>
     </header>
     <main>
         <h2>Here's how you become your very own Sir-Mix-Alot</h2>
-        <form method="get">
+        <form id="drink-form">
             <fieldset>
                 <legend>Drink Maker</legend>
                 <label class="top">First Name*: <input type="text" required></label>
@@ -56,8 +63,9 @@
         <p id="carbs-result3"></p><p id="carbs3"></p>
     </main>
     <footer>
-
+        <p>&copy;<span id="theCurrentYear"></span> Mike Helm Pocatello, ID &LT;(^.^)> Last Modified <span id="date"></span></p>
     </footer>
-    <script src="scripts/fruits.js"></script>
+    <script src="scripts/apps.js" ></script>
+    <script src="scripts/hamburger.js"></script>
 </body>
 </html>

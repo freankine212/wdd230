@@ -152,11 +152,19 @@ nav ul li.active a{
     width: 30px;
 }
 
-#hamburgerBtn span:nth-child(1){display: block;}
-#hamburgerBtn span:nth-child(2){display: none;}
+#hamburgerBtn span:nth-child(1){
+    display: block;
+}
+#hamburgerBtn span:nth-child(2){
+    display: none;
+}
 
-#hamburgerBtn.open span:nth-child(1){display: none;}
-#hamburgerBtn.open span:nth-child(2){display: block;}
+#hamburgerBtn.open span:nth-child(1){
+    display: none;
+}
+#hamburgerBtn.open span:nth-child(2){
+    display: block;
+}
 
 /* Main stuff */
 main{
@@ -186,12 +194,6 @@ main h2,h3,h4 {
     border: 1px;
     width: auto;
     align-items: center;
-}
-
-
-
-.heroimg{
-    /*max-width:400px;*/
 }
 
 .heroimg img{
