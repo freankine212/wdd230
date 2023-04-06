@@ -1,140 +1,89 @@
-const url = 'https://freankine212.github.io/wdd230/final/fruits.json';
-
-      fetch(url)
-        .then(response => response.json())
-        .then(data => {
-
-          let fruitSelect1 = document.getElementById("fruit-select-1");
-          let fruitSelect2 = document.getElementById("fruit-select-2");
-          let fruitSelect3 = document.getElementById("fruit-select-3");
-
-          data.fruits.forEach((fruit => {
-            //console.log("displayResults, fruits: ", fruit);
-            let option1 = document.createElement("option");
-            option1.value = fruit.name.toLowerCase();
-            option1.text = fruit.name;
-            const carbs1 = fruit.nutritions.carbohydrates.toFixed();
-            carbs1.text = fruit.carbohydrates;
-            //proten1.value = fruit.protein.toLowerCase();
-            //protein1.text = fruit.protein;
-            //fat1.value = fruit.fat.toLowerCase();
-            //fat1.text = fruit.fat;
-            //calories1.value = fruit.calories.toLowerCase();
-            //calories1.text = fruit.calories;
-            //sugar1.value = fruit.sugar.toLowerCase();
-            //sugar1.text = fruit.sugar;
-            fruitSelect1.appendChild(option1);
-
-            let option2 = document.createElement("option");
-            option2.value = fruit.name.toLowerCase();
-            option2.text = fruit.name;
-            const carbs2 = fruit.nutritions.carbohydrates.toFixed();
-            carbs2.text = fruit.nutritions.carbohydrates;
-            //protein2.value=fruit.protein.toLowerCase();
-            //protein2.text=fruit.protein;
-            //fat2.value=fruit.fat.toLowerCase();
-            //fat2.text = fruit.fat;
-            //calories2.value=fruit.calories.toLowerCase();
-            //calories2.text = fruit.calories;
-            //sugar2.value=fruit.sugar.toLowerCase();
-            //sugar2.text = fruit.sugar;
-            fruitSelect2.appendChild(option2);
-
-            let option3 = document.createElement("option");
-            option3.value = fruit.name.toLowerCase();
-            option3.text = fruit.name;
-            const carbs3 = fruit.nutritions.carbohydrates.toFixed();
-            carbs3.text = fruit.nutritions.carbohydrates;
-            //protein3.value = fruit.protein.toLowerCase();
-            //protein3.text=fruit.protein;
-            //fat3.value = fruit.fat.toLowerCase();
-            //fat3.text = fruit.fat;
-            //calories3.value = fruit.calories.toLowerCase();
-            //calories3.text = fruit.calories;
-            //sugar3.value = fruit.sugar.toLowerCase();
-            //sugar3.text = fruit.sugar;
-            fruitSelect3.appendChild(option3);
-
-            let carbTotal=0;
-            data.fruits.forEach(fruit =>{
-                carbTotal += fruit.carbs1 + fruit.carbs2 + fruit.carbs3;
-            });
-            console.log(`Total carbs: ${carbTotal(2)}`);
-          }));
-        })
-        .catch(error => console.error(error));
-
-
-
-let showResultsBtn = document.getElementById("show-results-btn");
-showResultsBtn.addEventListener("click", showResults);
-
-function showResults() {
-    let fruitSelect1 = document.getElementById("fruit-select-1");
-    let fruitSelect2 = document.getElementById("fruit-select-2");
-    let fruitSelect3 = document.getElementById("fruit-select-3");
-    let results = document.getElementById("results");
+async function queryFruit(){
+  const url = 'https://brotherblazzard.github.io/canvas-content/fruit.json';
   
-    let selectedFruit1 = fruitSelect1.value;
-    let selectedFruit2 = fruitSelect2.value;
-    let selectedFruit3 = fruitSelect3.value;
+  const request = await fetch(url);
+  const fruits = (await request.json());
   
-    if (selectedFruit1 && selectedFruit2 && selectedFruit3) {
-      results.textContent = `You selected ${selectedFruit1} and ${selectedFruit2} and ${selectedFruit3}.`;
-    } else {
-      results.textContent = "Please select three fruits.";
+  const fruitSelect1 = document.getElementById("fruit-select-1");
+  const fruitSelect2 = document.getElementById("fruit-select-2");
+  const fruitSelect3 = document.getElementById("fruit-select-3");
+  
+  fruits.forEach(fruit =>{
+      const name = fruit.name;
+        const option1 = document.createElement("option");
+        const option2 = document.createElement("option");
+        const option3 = document.createElement("option");
+  
+      option1.textContent = name;
+      option2.textContent = name;
+      option3.textContent = name;
+  
+      fruitSelect1.appendChild(option1);
+      fruitSelect2.appendChild(option2);
+      fruitSelect3.appendChild(option3);
+    });
+  
+    function getValue(fieldName, targetFruit){
+      for (let i=0; i< fruits.length; i++) {
+        if (fruits[i].name == targetFruit) {
+          return fruits[i].nutritions[fieldName];
+        }
+      }
     }
-  }
-
-  function showCarbs() {
-    let selectedValue1 = fruitSelect1;
-    let selectedValue2 = fruitSelect2;
-    let selectedValue3 = fruitSelect3;
-
-    if (selectedValue1) {
-        let fruitSelect1 = data.fruits.find(fruit => fruit.name.toLowerCase() === selectedValue1);
-        let carbsResult1 = document.getElementById("carbs-result1")
-        carbsResult1.textContent = `Carbs: ${fruitSelect1.carbs1}g`
-    } else{
-        let carbsResult1 = document.getElementById("carbs-result1");
-        carbsResult1.textContent = "";
+    function sum(fieldName, fruitName1, fruitName2, fruitName3) {
+      let sum = 0;
+      sum += getValue(fieldName, fruitName1);
+      sum += getValue(fieldName, fruitName2);
+      sum += getValue(fieldName, fruitName3);
+      return sum;
     }
-    if (selectedValue2) {
-        let fruitSelect2 = data.fruits.find(fruit => fruit.name.toLowerCase() === selectedValue2);
-        let carbsResult2 = document.getElementById("carbs-result2")
-        carbsResult2.textContent = `Carbs: ${fruitSelect2.carbs2}g`
-    } else{
-        let carbsResult2 = document.getElementById("carbs-result2");
-        carbsResult2.textContent = "";
+  
+    function save(){
+      if (document.querySelector("#drink-form").checkValidity())
+      {
+        console.log("You did it!");
+        const drinkOut = document.querySelector("#drinkout");
+        const fruitName1 = document.querySelector("#fruit-select-1").value;
+        const fruitName2 = document.querySelector("#fruit-select-2").value;
+        const fruitName3 = document.querySelector("#fruit-select-3").value;
+      
+        const carbs = sum("carbohydrates", fruitName1, fruitName2, fruitName3);
+        const prot = sum("protein", fruitName1, fruitName2, fruitName3);
+        const fat = sum("fat", fruitName1, fruitName2, fruitName3);
+        const sugar = sum("sugar", fruitName1, fruitName2, fruitName3);
+        const calories = sum("calories", fruitName1, fruitName2, fruitName3);
+      
+        const dateStamp = Intl.DateTimeFormat("en-UK", {
+          dateStyle: "full"
+        }).format(Date.now());
+      
+      drinkOut.innerHTML = `<div><strong>${document.querySelector("#name").value}</strong></div>
+          <div>${document.querySelector("#phone").value}</div>
+          <div>${document.querySelector("#email").value}</div>
+          <div id="fruitnames">
+          <span></span><span>${fruitName1}</span> - <span>${fruitName2}</span> - <span>${fruitName3}</span>
+          </div>
+          <div id="drinkstats">
+          <span>Carbs</span><span>${Math.floor(carbs)}</span>
+          <span>Protein</span><span>${Math.floor(prot)}</span>
+          <span>Fat</span><span>${Math.floor(fat)}</span>
+          <span>Sugar</span><span>${Math.floor(sugar)}</span>
+          <span>Calories</span><span>${Math.floor(calories)}</span>
+          </div>
+          <div>${document.querySelector("#special").value}</div>
+          <div>Order Date: ${dateStamp}</div>`;
+      if (localStorage.drinksMixed) {
+          localStorage.drinksMixed = parseInt(localStorage.drinksMixed) + 1;
+      }
+      else {
+          localStorage.drinksMixed = 1;
+        }
+        updateDrinkCount();
+      }
     }
-    if (selectedValue3) {
-        let fruitSelect3 = data.fruits.find(fruit => fruit.name.toLowerCase() === selectedValue3);
-        let carbsResult3 = document.getElementById("carbs-result3")
-        carbsResult3.textContent = `Carbs: ${fruitSelect3.carbs3}g`
-    } else{
-        let carbsResult3 = document.getElementById("carbs-result3");
-        carbsResult3.textContent = "";
-    }
-  }
+  
+    const saveButton = document.querySelector("#savebutton");
+    saveButton.addEventListener("click", save);
+}
 
-
-
-//async function getDirectoryData(){
-//    const response= await fetch(url);
-//    const data = await response.json();
-//    console.table(data.fruits);
-//    displayDirectory(data.fruits);
-//}
-
-//const displayDirectory = (fruits) =>{
-//    const list = document.querySelector('div.list');
-//
-  //      fruits.forEach((fruit) => {
-    //        let select = document.createElement('fruit-select');
-      //      data.fruits.forEach(fruit =>{
-        //    option.value = fruit.name;
-        //    option.text = fruit.name;
-         //   Selection.appendChild(option);
-//        })
-//    })
-//}
+queryFruit();
