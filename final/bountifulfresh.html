@@ -34,9 +34,9 @@
         <form id="drink-form">
             <fieldset>
                 <legend>Drink Maker</legend>
-                <label class="top">First Name*: <input type="text" required></label>
-                <label class="top">Email*: <input type="email" required></label>
-                <label class="top">Phone Number*: <input type="tel" required></label>
+                <label class="top">First Name*: <input id="name" type="text" required></label>
+                <label class="top">Email*: <input id="email" type="email" required></label>
+                <label class="top">Phone Number*: <input id="phone" type="tel" required></label>
             </fieldset>
             <fieldset>
                 <h2>Select your fillings</h2>
@@ -53,19 +53,23 @@
                     <select id="fruit-select-3" name = "fruit">
                         <option value="">Select yet another fruit</option>
                     </select>
-                <label class="top"><textarea rows="5" cols="15" placeholder="Whatcha lookin for?"></textarea>Special Instructions:</label>
-                <button id="show-results-btn">Show Results</button>
+                <label class="top"><textarea id="special" rows="5" cols="15" placeholder="Whatcha lookin for?"></textarea>Special Instructions:</label>
+                <input type="button" value="Save" id="savebutton">
             </fieldset>
         </form>
-        <p id="results"></p>
-        <p id="carbs-result1"></p><p id="carbs1"></p>
-        <p id="carbs-result2"></p><p id="carbs2"></p>
-        <p id="carbs-result3"></p><p id="carbs3"></p>
+        <div id="drinkout"></div>
+        <section id="drinks">
+                <h2>Drink master</h2>
+                <div id="made"># of Drinks made</div>
+            </div>
+        </section>
     </main>
     <footer>
         <p>&copy;<span id="theCurrentYear"></span> Mike Helm Pocatello, ID &LT;(^.^)> Last Modified <span id="date"></span></p>
     </footer>
     <script src="scripts/apps.js" ></script>
     <script src="scripts/hamburger.js"></script>
+    <script src="scripts/drinks.js"></script>
+    <script src="scripts/fruits.js"></script>
 </body>
 </html>

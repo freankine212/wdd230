@@ -19,12 +19,14 @@
       }
       #call{
         grid-column:1/2;
-        grid-row: 2/3
+        grid-row: 2/3;
+        width: auto;
       }
     
       #weather {
           grid-column: 1/2;
           grid-row: 3/3;
+          width: auto;
       }
   
       #drinks {
