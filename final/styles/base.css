@@ -158,7 +158,9 @@ padding: 1em;
 #call,
 #abount,
 #map,
-#contact{
+#contact,
+#fotd
+{
     border-style: groove;
     border-color: var(--primary-fg);
     margin: 0;
@@ -188,6 +190,10 @@ footer{
     height: fit-content;
     overflow: hidden;
 
+}
+
+#fotd{
+    padding-right: 10em;
 }
 
 #weather-display{
@@ -238,5 +244,7 @@ footer{
     width: 100%;
     box-sizing: border-box;
 }
+
+
 
 /*fresh*/
