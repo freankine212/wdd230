@@ -16,6 +16,8 @@ font-family: 'Martian Mono', monospace;
 html{
     padding: 0px;
     font-family: var(--body-font);
+    display: flex;
+    justify-content: center;
 }
 
 body{
@@ -41,6 +43,7 @@ p{
 header{
     background-color: var(--primary-bg);
     color: var(--primary-fg);
+    padding: 1em;
 }
 
 header div{
@@ -127,7 +130,6 @@ nav ul li a{
 #hamburgerBtn img{
     height: 30px;
     width: 30px;
-    align-items: center;
 }
 
 #hamburgerBtn span:nth-child(1){display: block;}
@@ -141,14 +143,22 @@ nav ul li a{
 main{
 background-color: var(--primary-bg);
 color: var(--primary-fg);
+width: auto;
+display: grid;
+grid-template-columns: 1fr;
+grid-template-rows: auto auto 1fr;
+gap: 1em;
+padding: 1em;
 }
 
-#heroimg{
-    width: auto;
-    display: inline;
-}
-
-#calltoaction{
+#home,
+#weather,
+#drinks,
+#quest,
+#call,
+#abount,
+#map,
+#contact{
     border-style: groove;
     border-color: var(--primary-fg);
     margin: 0;
@@ -156,11 +166,6 @@ color: var(--primary-fg);
     width: auto;
 }
 
-#qanda{
-    width:auto;
-    margin: 0;
-    padding:17%;
-}
 form label.top{
     display: block;
 }
@@ -170,4 +175,68 @@ form label.top{
 footer{
     background-color: var(--primary-bg);
     color: var(--primary-fg);
+    padding: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
 }
+
+/*home page */
+
+#weather{
+    height: fit-content;
+    overflow: hidden;
+
+}
+
+#weather-display{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    gap: .5em;
+    justify-items: center;
+    align-items: center;
+}
+
+#current-temp{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    display: flex;
+    align-items: center;
+    align-self: center;
+    justify-self: center;
+    font-size: 2.1em;
+    border-radius: 10em;
+    padding: .2em;
+    box-shadow: 0 0 1em black;
+    text-shadow: 0 0 5px rgb(190, 210, 255);
+}
+#temperature strong {
+    height: fit-content;
+}
+
+#weather-description {
+    font-size: large;
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+#forecast {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5em;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+#forecast div.forecast-item {
+    color:var(--primary-fg);
+    border-radius: .2em;
+    padding: .2em .4em;
+    font-weight: 400;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/*fresh*/
